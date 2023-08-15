@@ -282,8 +282,8 @@ namespace L2ARAutomationSerialPort
             // labelName
             // 
             this.labelName.AutoSize = true;
-            this.labelName.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelName.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.labelName.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelName.ForeColor = System.Drawing.Color.SkyBlue;
             this.labelName.Location = new System.Drawing.Point(9, 596);
             this.labelName.Name = "labelName";
             this.labelName.Size = new System.Drawing.Size(192, 17);
@@ -292,6 +292,7 @@ namespace L2ARAutomationSerialPort
             // 
             // FormSerialPortAutomation
             // 
+            this.AcceptButton = this.buttonSend;
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(950, 619);
