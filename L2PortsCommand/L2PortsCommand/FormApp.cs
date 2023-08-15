@@ -148,5 +148,20 @@ namespace L2ARAutomationSerialPort
                 sendSerialComand(textBoxSend.Text);
             }
         }
+
+        private void buttonOrigin_Click(object sender, EventArgs e)
+        {
+            sendSerialComand("move000");
+        }
+
+        private void buttonDistance25_Click(object sender, EventArgs e)
+        {
+            sendSerialComand("move250");
+        }
+
+        private void buttonDistance30_Click(object sender, EventArgs e)
+        {
+            sendSerialComand("move300");
+        }
     }
 }
