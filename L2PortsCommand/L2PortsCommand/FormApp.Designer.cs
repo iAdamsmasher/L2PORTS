@@ -58,13 +58,15 @@ namespace L2ARAutomationSerialPort
             this.tabControlMain = new System.Windows.Forms.TabControl();
             this.tabPageL2AR = new System.Windows.Forms.TabPage();
             this.tabPageDepth = new System.Windows.Forms.TabPage();
-            this.buttonOrigin = new System.Windows.Forms.Button();
-            this.buttonDistance25 = new System.Windows.Forms.Button();
-            this.buttonDistance30 = new System.Windows.Forms.Button();
-            this.buttonStatus = new System.Windows.Forms.Button();
-            this.buttonUP = new System.Windows.Forms.Button();
-            this.buttonDown = new System.Windows.Forms.Button();
             this.labelDepthCommands = new System.Windows.Forms.Label();
+            this.buttonDown = new System.Windows.Forms.Button();
+            this.buttonUP = new System.Windows.Forms.Button();
+            this.buttonStatus = new System.Windows.Forms.Button();
+            this.buttonDistance30 = new System.Windows.Forms.Button();
+            this.buttonDistance25 = new System.Windows.Forms.Button();
+            this.buttonOrigin = new System.Windows.Forms.Button();
+            this.tabPageL2Vision = new System.Windows.Forms.TabPage();
+            this.tabPageSqt = new System.Windows.Forms.TabPage();
             this.tabControlMain.SuspendLayout();
             this.tabPageL2AR.SuspendLayout();
             this.tabPageDepth.SuspendLayout();
@@ -149,7 +151,7 @@ namespace L2ARAutomationSerialPort
             // 
             // buttonOpenDrawer
             // 
-            this.buttonOpenDrawer.Location = new System.Drawing.Point(23, 131);
+            this.buttonOpenDrawer.Location = new System.Drawing.Point(23, 84);
             this.buttonOpenDrawer.Name = "buttonOpenDrawer";
             this.buttonOpenDrawer.Size = new System.Drawing.Size(107, 51);
             this.buttonOpenDrawer.TabIndex = 12;
@@ -159,7 +161,7 @@ namespace L2ARAutomationSerialPort
             // 
             // buttonCloseDrawer
             // 
-            this.buttonCloseDrawer.Location = new System.Drawing.Point(138, 131);
+            this.buttonCloseDrawer.Location = new System.Drawing.Point(138, 84);
             this.buttonCloseDrawer.Name = "buttonCloseDrawer";
             this.buttonCloseDrawer.Size = new System.Drawing.Size(105, 51);
             this.buttonCloseDrawer.TabIndex = 13;
@@ -169,7 +171,7 @@ namespace L2ARAutomationSerialPort
             // 
             // buttonUpClip
             // 
-            this.buttonUpClip.Location = new System.Drawing.Point(23, 188);
+            this.buttonUpClip.Location = new System.Drawing.Point(23, 141);
             this.buttonUpClip.Name = "buttonUpClip";
             this.buttonUpClip.Size = new System.Drawing.Size(107, 50);
             this.buttonUpClip.TabIndex = 14;
@@ -179,7 +181,7 @@ namespace L2ARAutomationSerialPort
             // 
             // buttonDownClip
             // 
-            this.buttonDownClip.Location = new System.Drawing.Point(138, 188);
+            this.buttonDownClip.Location = new System.Drawing.Point(138, 141);
             this.buttonDownClip.Name = "buttonDownClip";
             this.buttonDownClip.Size = new System.Drawing.Size(105, 50);
             this.buttonDownClip.TabIndex = 15;
@@ -189,7 +191,7 @@ namespace L2ARAutomationSerialPort
             // 
             // buttonUSBIn
             // 
-            this.buttonUSBIn.Location = new System.Drawing.Point(23, 250);
+            this.buttonUSBIn.Location = new System.Drawing.Point(23, 203);
             this.buttonUSBIn.Name = "buttonUSBIn";
             this.buttonUSBIn.Size = new System.Drawing.Size(107, 47);
             this.buttonUSBIn.TabIndex = 16;
@@ -199,7 +201,7 @@ namespace L2ARAutomationSerialPort
             // 
             // buttonUSBOut
             // 
-            this.buttonUSBOut.Location = new System.Drawing.Point(138, 247);
+            this.buttonUSBOut.Location = new System.Drawing.Point(138, 200);
             this.buttonUSBOut.Name = "buttonUSBOut";
             this.buttonUSBOut.Size = new System.Drawing.Size(105, 52);
             this.buttonUSBOut.TabIndex = 17;
@@ -209,7 +211,7 @@ namespace L2ARAutomationSerialPort
             // 
             // buttonP3In
             // 
-            this.buttonP3In.Location = new System.Drawing.Point(23, 305);
+            this.buttonP3In.Location = new System.Drawing.Point(23, 258);
             this.buttonP3In.Name = "buttonP3In";
             this.buttonP3In.Size = new System.Drawing.Size(107, 52);
             this.buttonP3In.TabIndex = 18;
@@ -219,7 +221,7 @@ namespace L2ARAutomationSerialPort
             // 
             // buttonP3Out
             // 
-            this.buttonP3Out.Location = new System.Drawing.Point(138, 305);
+            this.buttonP3Out.Location = new System.Drawing.Point(138, 258);
             this.buttonP3Out.Name = "buttonP3Out";
             this.buttonP3Out.Size = new System.Drawing.Size(105, 52);
             this.buttonP3Out.TabIndex = 19;
@@ -235,6 +237,7 @@ namespace L2ARAutomationSerialPort
             this.textBoxResult.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.textBoxResult.Size = new System.Drawing.Size(355, 234);
             this.textBoxResult.TabIndex = 22;
+
             // 
             // buttonClear
             // 
@@ -248,7 +251,7 @@ namespace L2ARAutomationSerialPort
             // 
             // buttonAudio
             // 
-            this.buttonAudio.Location = new System.Drawing.Point(24, 363);
+            this.buttonAudio.Location = new System.Drawing.Point(24, 316);
             this.buttonAudio.Name = "buttonAudio";
             this.buttonAudio.Size = new System.Drawing.Size(105, 51);
             this.buttonAudio.TabIndex = 25;
@@ -258,7 +261,7 @@ namespace L2ARAutomationSerialPort
             // 
             // buttonRadio
             // 
-            this.buttonRadio.Location = new System.Drawing.Point(138, 363);
+            this.buttonRadio.Location = new System.Drawing.Point(138, 316);
             this.buttonRadio.Name = "buttonRadio";
             this.buttonRadio.Size = new System.Drawing.Size(105, 51);
             this.buttonRadio.TabIndex = 26;
@@ -308,16 +311,18 @@ namespace L2ARAutomationSerialPort
             // 
             this.labelL2ARCommands.AutoSize = true;
             this.labelL2ARCommands.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.labelL2ARCommands.Location = new System.Drawing.Point(20, 107);
+            this.labelL2ARCommands.Location = new System.Drawing.Point(104, 0);
             this.labelL2ARCommands.Name = "labelL2ARCommands";
-            this.labelL2ARCommands.Size = new System.Drawing.Size(148, 20);
+            this.labelL2ARCommands.Size = new System.Drawing.Size(256, 20);
             this.labelL2ARCommands.TabIndex = 31;
-            this.labelL2ARCommands.Text = "L2AR COMMANDS";
+            this.labelL2ARCommands.Text = "              L2AR COMMANDS             ";
             // 
             // tabControlMain
             // 
             this.tabControlMain.Controls.Add(this.tabPageL2AR);
             this.tabControlMain.Controls.Add(this.tabPageDepth);
+            this.tabControlMain.Controls.Add(this.tabPageL2Vision);
+            this.tabControlMain.Controls.Add(this.tabPageSqt);
             this.tabControlMain.ItemSize = new System.Drawing.Size(54, 25);
             this.tabControlMain.Location = new System.Drawing.Point(398, 12);
             this.tabControlMain.Name = "tabControlMain";
@@ -338,6 +343,7 @@ namespace L2ARAutomationSerialPort
             this.tabPageL2AR.Controls.Add(this.buttonDownClip);
             this.tabPageL2AR.Controls.Add(this.buttonUSBOut);
             this.tabPageL2AR.Controls.Add(this.buttonUSBIn);
+            this.tabPageL2AR.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.tabPageL2AR.Location = new System.Drawing.Point(4, 29);
             this.tabPageL2AR.Name = "tabPageL2AR";
             this.tabPageL2AR.Padding = new System.Windows.Forms.Padding(3);
@@ -363,59 +369,19 @@ namespace L2ARAutomationSerialPort
             this.tabPageDepth.Text = "DEPTH";
             this.tabPageDepth.UseVisualStyleBackColor = true;
             // 
-            // buttonOrigin
+            // labelDepthCommands
             // 
-            this.buttonOrigin.Location = new System.Drawing.Point(26, 141);
-            this.buttonOrigin.Name = "buttonOrigin";
-            this.buttonOrigin.Size = new System.Drawing.Size(114, 61);
-            this.buttonOrigin.TabIndex = 43;
-            this.buttonOrigin.Text = "ORIGEM";
-            this.buttonOrigin.UseVisualStyleBackColor = true;
-            this.buttonOrigin.Click += new System.EventHandler(this.buttonOrigin_Click);
-            // 
-            // buttonDistance25
-            // 
-            this.buttonDistance25.Location = new System.Drawing.Point(148, 141);
-            this.buttonDistance25.Name = "buttonDistance25";
-            this.buttonDistance25.Size = new System.Drawing.Size(114, 61);
-            this.buttonDistance25.TabIndex = 44;
-            this.buttonDistance25.Text = "Distance_25";
-            this.buttonDistance25.UseVisualStyleBackColor = true;
-            this.buttonDistance25.Click += new System.EventHandler(this.buttonDistance25_Click);
-            // 
-            // buttonDistance30
-            // 
-            this.buttonDistance30.Location = new System.Drawing.Point(270, 141);
-            this.buttonDistance30.Name = "buttonDistance30";
-            this.buttonDistance30.Size = new System.Drawing.Size(114, 61);
-            this.buttonDistance30.TabIndex = 45;
-            this.buttonDistance30.Text = "Distance_30";
-            this.buttonDistance30.UseVisualStyleBackColor = true;
-            this.buttonDistance30.Click += new System.EventHandler(this.buttonDistance30_Click);
-            // 
-            // buttonStatus
-            // 
-            this.buttonStatus.Location = new System.Drawing.Point(26, 207);
-            this.buttonStatus.Name = "buttonStatus";
-            this.buttonStatus.Size = new System.Drawing.Size(114, 61);
-            this.buttonStatus.TabIndex = 46;
-            this.buttonStatus.Text = "STATUS";
-            this.buttonStatus.UseVisualStyleBackColor = true;
-            this.buttonStatus.Click += new System.EventHandler(this.buttonStatus_Click);
-            // 
-            // buttonUP
-            // 
-            this.buttonUP.Location = new System.Drawing.Point(148, 207);
-            this.buttonUP.Name = "buttonUP";
-            this.buttonUP.Size = new System.Drawing.Size(114, 61);
-            this.buttonUP.TabIndex = 47;
-            this.buttonUP.Text = "Chart_up";
-            this.buttonUP.UseVisualStyleBackColor = true;
-            this.buttonUP.Click += new System.EventHandler(this.buttonUP_Click);
+            this.labelDepthCommands.AutoSize = true;
+            this.labelDepthCommands.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.labelDepthCommands.Location = new System.Drawing.Point(101, 3);
+            this.labelDepthCommands.Name = "labelDepthCommands";
+            this.labelDepthCommands.Size = new System.Drawing.Size(269, 20);
+            this.labelDepthCommands.TabIndex = 49;
+            this.labelDepthCommands.Text = "              DEPTH COMMANDS             ";
             // 
             // buttonDown
             // 
-            this.buttonDown.Location = new System.Drawing.Point(270, 207);
+            this.buttonDown.Location = new System.Drawing.Point(293, 197);
             this.buttonDown.Name = "buttonDown";
             this.buttonDown.Size = new System.Drawing.Size(114, 61);
             this.buttonDown.TabIndex = 48;
@@ -423,15 +389,75 @@ namespace L2ARAutomationSerialPort
             this.buttonDown.UseVisualStyleBackColor = true;
             this.buttonDown.Click += new System.EventHandler(this.buttonDown_Click);
             // 
-            // labelDepthCommands
+            // buttonUP
             // 
-            this.labelDepthCommands.AutoSize = true;
-            this.labelDepthCommands.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.labelDepthCommands.Location = new System.Drawing.Point(33, 102);
-            this.labelDepthCommands.Name = "labelDepthCommands";
-            this.labelDepthCommands.Size = new System.Drawing.Size(161, 20);
-            this.labelDepthCommands.TabIndex = 49;
-            this.labelDepthCommands.Text = "DEPTH COMMANDS";
+            this.buttonUP.Location = new System.Drawing.Point(171, 197);
+            this.buttonUP.Name = "buttonUP";
+            this.buttonUP.Size = new System.Drawing.Size(114, 61);
+            this.buttonUP.TabIndex = 47;
+            this.buttonUP.Text = "Chart_up";
+            this.buttonUP.UseVisualStyleBackColor = true;
+            this.buttonUP.Click += new System.EventHandler(this.buttonUP_Click);
+            // 
+            // buttonStatus
+            // 
+            this.buttonStatus.Location = new System.Drawing.Point(49, 197);
+            this.buttonStatus.Name = "buttonStatus";
+            this.buttonStatus.Size = new System.Drawing.Size(114, 61);
+            this.buttonStatus.TabIndex = 46;
+            this.buttonStatus.Text = "STATUS";
+            this.buttonStatus.UseVisualStyleBackColor = true;
+            this.buttonStatus.Click += new System.EventHandler(this.buttonStatus_Click);
+            // 
+            // buttonDistance30
+            // 
+            this.buttonDistance30.Location = new System.Drawing.Point(293, 131);
+            this.buttonDistance30.Name = "buttonDistance30";
+            this.buttonDistance30.Size = new System.Drawing.Size(114, 61);
+            this.buttonDistance30.TabIndex = 45;
+            this.buttonDistance30.Text = "Distance_30";
+            this.buttonDistance30.UseVisualStyleBackColor = true;
+            this.buttonDistance30.Click += new System.EventHandler(this.buttonDistance30_Click);
+            // 
+            // buttonDistance25
+            // 
+            this.buttonDistance25.Location = new System.Drawing.Point(171, 131);
+            this.buttonDistance25.Name = "buttonDistance25";
+            this.buttonDistance25.Size = new System.Drawing.Size(114, 61);
+            this.buttonDistance25.TabIndex = 44;
+            this.buttonDistance25.Text = "Distance_25";
+            this.buttonDistance25.UseVisualStyleBackColor = true;
+            this.buttonDistance25.Click += new System.EventHandler(this.buttonDistance25_Click);
+            // 
+            // buttonOrigin
+            // 
+            this.buttonOrigin.Location = new System.Drawing.Point(49, 131);
+            this.buttonOrigin.Name = "buttonOrigin";
+            this.buttonOrigin.Size = new System.Drawing.Size(114, 61);
+            this.buttonOrigin.TabIndex = 43;
+            this.buttonOrigin.Text = "ORIGEM";
+            this.buttonOrigin.UseVisualStyleBackColor = true;
+            this.buttonOrigin.Click += new System.EventHandler(this.buttonOrigin_Click);
+            // 
+            // tabPageL2Vision
+            // 
+            this.tabPageL2Vision.Location = new System.Drawing.Point(4, 29);
+            this.tabPageL2Vision.Name = "tabPageL2Vision";
+            this.tabPageL2Vision.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageL2Vision.Size = new System.Drawing.Size(480, 575);
+            this.tabPageL2Vision.TabIndex = 2;
+            this.tabPageL2Vision.Text = "L2VISION";
+            this.tabPageL2Vision.UseVisualStyleBackColor = true;
+            // 
+            // tabPageSqt
+            // 
+            this.tabPageSqt.Location = new System.Drawing.Point(4, 29);
+            this.tabPageSqt.Name = "tabPageSqt";
+            this.tabPageSqt.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageSqt.Size = new System.Drawing.Size(480, 575);
+            this.tabPageSqt.TabIndex = 3;
+            this.tabPageSqt.Text = "SQT";
+            this.tabPageSqt.UseVisualStyleBackColor = true;
             // 
             // FormSerialPortAutomation
             // 
@@ -458,6 +484,7 @@ namespace L2ARAutomationSerialPort
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
             this.Name = "FormSerialPortAutomation";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "L2AR Port Automation";
             this.tabControlMain.ResumeLayout(false);
             this.tabPageL2AR.ResumeLayout(false);
@@ -475,10 +502,10 @@ namespace L2ARAutomationSerialPort
         private System.Windows.Forms.Label labelBaudRate;
         private System.Windows.Forms.Label labelDataBits;
         private System.Windows.Forms.Label labelStopBits;
-        private System.Windows.Forms.ComboBox comboBoxPorts;
-        private System.Windows.Forms.ComboBox comboBoxBoundRate;
-        private System.Windows.Forms.ComboBox comboBoxDataBits;
-        private System.Windows.Forms.ComboBox comboBoxStopBits;
+        public System.Windows.Forms.ComboBox comboBoxPorts;
+        public System.Windows.Forms.ComboBox comboBoxBoundRate;
+        public System.Windows.Forms.ComboBox comboBoxDataBits;
+        public System.Windows.Forms.ComboBox comboBoxStopBits;
         private System.Windows.Forms.Button buttonOpenDrawer;
         private System.Windows.Forms.Button buttonCloseDrawer;
         private System.Windows.Forms.Button buttonUpClip;
@@ -487,7 +514,7 @@ namespace L2ARAutomationSerialPort
         private System.Windows.Forms.Button buttonUSBOut;
         private System.Windows.Forms.Button buttonP3In;
         private System.Windows.Forms.Button buttonP3Out;
-        private System.Windows.Forms.TextBox textBoxResult;
+        public System.Windows.Forms.TextBox textBoxResult;
         private System.Windows.Forms.Button buttonClear;
         private System.Windows.Forms.Button buttonAudio;
         private System.Windows.Forms.Button buttonRadio;
@@ -506,5 +533,7 @@ namespace L2ARAutomationSerialPort
         private System.Windows.Forms.Button buttonDistance25;
         private System.Windows.Forms.Button buttonOrigin;
         private System.Windows.Forms.Label labelDepthCommands;
+        private System.Windows.Forms.TabPage tabPageL2Vision;
+        private System.Windows.Forms.TabPage tabPageSqt;
     }
 }
