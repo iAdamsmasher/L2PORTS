@@ -10,6 +10,8 @@ namespace L2ARAutomationSerialPort
     {
         private static FormSerialPortAutomation INSTANCE = null;
         SerialCommands serialCmd;
+        private object serialPort;
+        SerialPort serialPorts = new SerialPort();
 
         public FormSerialPortAutomation()
         {
@@ -136,5 +138,14 @@ namespace L2ARAutomationSerialPort
             comboBoxPorts.Items.AddRange(ports);
         }
 
+        private void buttonOpen_Click(object sender, EventArgs e)
+        {
+            serialPorts.Open();
+        }
+
+        private void buttonClose_Click(object sender, EventArgs e)
+        {
+            serialPorts.Close();
+        }
     }
 }
