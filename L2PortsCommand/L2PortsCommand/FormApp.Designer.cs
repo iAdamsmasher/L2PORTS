@@ -57,6 +57,8 @@ namespace L2ARAutomationSerialPort
             this.labelL2ARCommands = new System.Windows.Forms.Label();
             this.tabControlMain = new System.Windows.Forms.TabControl();
             this.tabPageL2AR = new System.Windows.Forms.TabPage();
+            this.buttonHeadSetOff = new System.Windows.Forms.Button();
+            this.buttonHeadSetOn = new System.Windows.Forms.Button();
             this.tabPageDepth = new System.Windows.Forms.TabPage();
             this.labelDepthCommands = new System.Windows.Forms.Label();
             this.buttonDown = new System.Windows.Forms.Button();
@@ -67,11 +69,12 @@ namespace L2ARAutomationSerialPort
             this.buttonOrigin = new System.Windows.Forms.Button();
             this.tabPageL2Vision = new System.Windows.Forms.TabPage();
             this.tabPageSqt = new System.Windows.Forms.TabPage();
-            this.buttonHeadSetOn = new System.Windows.Forms.Button();
-            this.buttonHeadSetOff = new System.Windows.Forms.Button();
+            this.buttonOpenV = new System.Windows.Forms.Button();
+            this.buttonCloseV = new System.Windows.Forms.Button();
             this.tabControlMain.SuspendLayout();
             this.tabPageL2AR.SuspendLayout();
             this.tabPageDepth.SuspendLayout();
+            this.tabPageL2Vision.SuspendLayout();
             this.SuspendLayout();
             // 
             // labelPort
@@ -355,6 +358,26 @@ namespace L2ARAutomationSerialPort
             this.tabPageL2AR.Text = "L2AR";
             this.tabPageL2AR.UseVisualStyleBackColor = true;
             // 
+            // buttonHeadSetOff
+            // 
+            this.buttonHeadSetOff.Location = new System.Drawing.Point(234, 394);
+            this.buttonHeadSetOff.Name = "buttonHeadSetOff";
+            this.buttonHeadSetOff.Size = new System.Drawing.Size(126, 62);
+            this.buttonHeadSetOff.TabIndex = 33;
+            this.buttonHeadSetOff.Text = "HEADSET OFF";
+            this.buttonHeadSetOff.UseVisualStyleBackColor = true;
+            this.buttonHeadSetOff.Click += new System.EventHandler(this.buttonHeadSetOff_Click);
+            // 
+            // buttonHeadSetOn
+            // 
+            this.buttonHeadSetOn.Location = new System.Drawing.Point(100, 394);
+            this.buttonHeadSetOn.Name = "buttonHeadSetOn";
+            this.buttonHeadSetOn.Size = new System.Drawing.Size(126, 62);
+            this.buttonHeadSetOn.TabIndex = 32;
+            this.buttonHeadSetOn.Text = "HEADSET ON";
+            this.buttonHeadSetOn.UseVisualStyleBackColor = true;
+            this.buttonHeadSetOn.Click += new System.EventHandler(this.buttonHeadSetOn_Click);
+            // 
             // tabPageDepth
             // 
             this.tabPageDepth.Controls.Add(this.labelDepthCommands);
@@ -444,6 +467,8 @@ namespace L2ARAutomationSerialPort
             // 
             // tabPageL2Vision
             // 
+            this.tabPageL2Vision.Controls.Add(this.buttonCloseV);
+            this.tabPageL2Vision.Controls.Add(this.buttonOpenV);
             this.tabPageL2Vision.Location = new System.Drawing.Point(4, 29);
             this.tabPageL2Vision.Name = "tabPageL2Vision";
             this.tabPageL2Vision.Padding = new System.Windows.Forms.Padding(3);
@@ -462,25 +487,25 @@ namespace L2ARAutomationSerialPort
             this.tabPageSqt.Text = "SQT";
             this.tabPageSqt.UseVisualStyleBackColor = true;
             // 
-            // buttonHeadSetOn
+            // buttonOpenV
             // 
-            this.buttonHeadSetOn.Location = new System.Drawing.Point(100, 394);
-            this.buttonHeadSetOn.Name = "buttonHeadSetOn";
-            this.buttonHeadSetOn.Size = new System.Drawing.Size(126, 62);
-            this.buttonHeadSetOn.TabIndex = 32;
-            this.buttonHeadSetOn.Text = "HEADSET ON";
-            this.buttonHeadSetOn.UseVisualStyleBackColor = true;
-            this.buttonHeadSetOn.Click += new System.EventHandler(this.buttonHeadSetOn_Click);
+            this.buttonOpenV.Location = new System.Drawing.Point(78, 98);
+            this.buttonOpenV.Name = "buttonOpenV";
+            this.buttonOpenV.Size = new System.Drawing.Size(114, 61);
+            this.buttonOpenV.TabIndex = 47;
+            this.buttonOpenV.Text = "OPEN";
+            this.buttonOpenV.UseVisualStyleBackColor = true;
+            this.buttonOpenV.Click += new System.EventHandler(this.buttonOpenV_Click);
             // 
-            // buttonHeadSetOff
+            // buttonCloseV
             // 
-            this.buttonHeadSetOff.Location = new System.Drawing.Point(234, 394);
-            this.buttonHeadSetOff.Name = "buttonHeadSetOff";
-            this.buttonHeadSetOff.Size = new System.Drawing.Size(126, 62);
-            this.buttonHeadSetOff.TabIndex = 33;
-            this.buttonHeadSetOff.Text = "HEADSET OFF";
-            this.buttonHeadSetOff.UseVisualStyleBackColor = true;
-            this.buttonHeadSetOff.Click += new System.EventHandler(this.buttonHeadSetOff_Click);
+            this.buttonCloseV.Location = new System.Drawing.Point(259, 98);
+            this.buttonCloseV.Name = "buttonCloseV";
+            this.buttonCloseV.Size = new System.Drawing.Size(114, 61);
+            this.buttonCloseV.TabIndex = 48;
+            this.buttonCloseV.Text = "CLOSE";
+            this.buttonCloseV.UseVisualStyleBackColor = true;
+            this.buttonCloseV.Click += new System.EventHandler(this.buttonCloseV_Click);
             // 
             // FormSerialPortAutomation
             // 
@@ -508,12 +533,13 @@ namespace L2ARAutomationSerialPort
             this.KeyPreview = true;
             this.Name = "FormSerialPortAutomation";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "L2AR Port Automation";
+            this.Text = "Serial Ports Automation v1.0";
             this.tabControlMain.ResumeLayout(false);
             this.tabPageL2AR.ResumeLayout(false);
             this.tabPageL2AR.PerformLayout();
             this.tabPageDepth.ResumeLayout(false);
             this.tabPageDepth.PerformLayout();
+            this.tabPageL2Vision.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -560,5 +586,7 @@ namespace L2ARAutomationSerialPort
         private System.Windows.Forms.TabPage tabPageSqt;
         private System.Windows.Forms.Button buttonHeadSetOff;
         private System.Windows.Forms.Button buttonHeadSetOn;
+        private System.Windows.Forms.Button buttonCloseV;
+        private System.Windows.Forms.Button buttonOpenV;
     }
 }

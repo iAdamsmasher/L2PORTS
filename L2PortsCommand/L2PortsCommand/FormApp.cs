@@ -133,6 +133,18 @@ namespace L2ARAutomationSerialPort
         {
             serialCmd.sendSerialComandAndRead("H1DOWN");
         }
+        private void buttonOpenV_Click(object sender, EventArgs e)
+        {
+            serialCmd.sendSerialComand("OUT6");
+            buttonOpenV.BackColor = Color.Green;
+            buttonCloseV.BackColor = Color.Red;
+        }
+        private void buttonCloseV_Click(object sender, EventArgs e)
+        {
+            serialCmd.sendSerialComand("OUT8");
+            buttonCloseV.BackColor = Color.Green;
+            buttonOpenV.BackColor = Color.Red;
+        }
         private void buttonClear_Click(object sender, EventArgs e)
         {
             textBoxResult.Text = "";
@@ -149,5 +161,7 @@ namespace L2ARAutomationSerialPort
             string[] ports = SerialPort.GetPortNames();
             comboBoxPorts.Items.AddRange(ports);
         }
+
+       
     }
 }
