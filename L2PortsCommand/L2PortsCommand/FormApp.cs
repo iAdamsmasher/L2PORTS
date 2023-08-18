@@ -91,6 +91,18 @@ namespace L2ARAutomationSerialPort
             buttonRadio.BackColor = Color.Green;
             buttonAudio.BackColor = Color.Red;
         }
+        private void buttonHeadSetOn_Click(object sender, EventArgs e)
+        {
+            serialCmd.sendSerialComand("ONAUD");
+            buttonHeadSetOn.BackColor = Color.Green;
+            buttonHeadSetOff.BackColor = Color.Red;
+        }
+        private void buttonHeadSetOff_Click(object sender, EventArgs e)
+        {
+            serialCmd.sendSerialComand("OFFAUD");
+            buttonHeadSetOff.BackColor = Color.Green;
+            buttonHeadSetOn.BackColor = Color.Red;
+        }
 
         private void buttonOrigin_Click(object sender, EventArgs e)
         {
@@ -136,16 +148,6 @@ namespace L2ARAutomationSerialPort
             comboBoxPorts.Items.Clear();
             string[] ports = SerialPort.GetPortNames();
             comboBoxPorts.Items.AddRange(ports);
-        }
-
-        private void buttonOpen_Click(object sender, EventArgs e)
-        {
-            serialPorts.Open();
-        }
-
-        private void buttonClose_Click(object sender, EventArgs e)
-        {
-            serialPorts.Close();
         }
     }
 }

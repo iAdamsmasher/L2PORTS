@@ -32,14 +32,14 @@ namespace L2PortsCommand
                     serialPort.StopBits = StopBits.One;
                 if (frmApp.comboBoxStopBits.Text == "Two")
                     serialPort.StopBits = StopBits.Two;
-
-                /* serialPort.Open();
+            
+                 serialPort.Open();
                  serialPort.Write(serialCmd);
 
 
                  if (serialPort.IsOpen)
                      serialPort.Close();
- */
+ 
             }
             catch (Exception ex)
             {
@@ -70,14 +70,14 @@ namespace L2PortsCommand
                 if (frmApp.comboBoxStopBits.Text == "Two")
                     serialPort.StopBits = StopBits.Two;
 
-                /* serialPort.Open();
+                 serialPort.Open();
                  serialPort.Write(serialCmd);
                  frmApp.textBoxResult.Text += "Response:"  + serialPort.ReadExisting();
 
 
                  if (serialPort.IsOpen)
                      serialPort.Close();
- */
+ 
             }
             catch (Exception ex)
             {

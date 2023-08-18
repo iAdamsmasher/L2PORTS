@@ -6,3 +6,11 @@ C:\DevelopmentProjects\L2Ports\L2PortsCommand\L2PortsCommand\obj\Debug\L2PortsCo
 C:\DevelopmentProjects\L2Ports\L2PortsCommand\L2PortsCommand\obj\Debug\L2PortsCommand.exe
 C:\DevelopmentProjects\L2Ports\L2PortsCommand\L2PortsCommand\obj\Debug\L2PortsCommand.pdb
 C:\DevelopmentProjects\L2Ports\L2PortsCommand\L2PortsCommand\obj\Debug\L2ARAutomationSerialPort.FormSerialPortAutomation.resources
+C:\DevelopmentProjects\L2Ports\L2PORTS\L2PortsCommand\L2PortsCommand\bin\Debug\L2PortsCommand.exe.config
+C:\DevelopmentProjects\L2Ports\L2PORTS\L2PortsCommand\L2PortsCommand\obj\Debug\L2PortsCommand.exe
+C:\DevelopmentProjects\L2Ports\L2PORTS\L2PortsCommand\L2PortsCommand\obj\Debug\L2PortsCommand.pdb
+C:\DevelopmentProjects\L2Ports\L2PORTS\L2PortsCommand\L2PortsCommand\bin\Debug\L2PortsCommand.exe
+C:\DevelopmentProjects\L2Ports\L2PORTS\L2PortsCommand\L2PortsCommand\bin\Debug\L2PortsCommand.pdb
+C:\DevelopmentProjects\L2Ports\L2PORTS\L2PortsCommand\L2PortsCommand\obj\Debug\L2ARAutomationSerialPort.FormSerialPortAutomation.resources
+C:\DevelopmentProjects\L2Ports\L2PORTS\L2PortsCommand\L2PortsCommand\obj\Debug\L2PortsCommand.Properties.Resources.resources
+C:\DevelopmentProjects\L2Ports\L2PORTS\L2PortsCommand\L2PortsCommand\obj\Debug\L2PortsCommand.csproj.GenerateResource.Cache
