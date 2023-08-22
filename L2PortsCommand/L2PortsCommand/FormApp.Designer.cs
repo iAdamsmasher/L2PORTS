@@ -68,14 +68,16 @@ namespace L2ARAutomationSerialPort
             this.buttonDistance25 = new System.Windows.Forms.Button();
             this.buttonOrigin = new System.Windows.Forms.Button();
             this.tabPageL2Vision = new System.Windows.Forms.TabPage();
-            this.tabPageSqt = new System.Windows.Forms.TabPage();
-            this.buttonOpenV = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.buttonCloseV = new System.Windows.Forms.Button();
-            this.buttonMoveUp = new System.Windows.Forms.Button();
-            this.buttonMoveDown = new System.Windows.Forms.Button();
-            this.buttonLockDr = new System.Windows.Forms.Button();
-            this.buttonUnlockDr = new System.Windows.Forms.Button();
+            this.buttonOpenV = new System.Windows.Forms.Button();
+            this.tabPageSqt = new System.Windows.Forms.TabPage();
+            this.label2 = new System.Windows.Forms.Label();
             this.buttonDrStatus = new System.Windows.Forms.Button();
+            this.buttonUnlockDr = new System.Windows.Forms.Button();
+            this.buttonLockDr = new System.Windows.Forms.Button();
+            this.buttonMoveDown = new System.Windows.Forms.Button();
+            this.buttonMoveUp = new System.Windows.Forms.Button();
             this.tabControlMain.SuspendLayout();
             this.tabPageL2AR.SuspendLayout();
             this.tabPageDepth.SuspendLayout();
@@ -475,6 +477,7 @@ namespace L2ARAutomationSerialPort
             // 
             // tabPageL2Vision
             // 
+            this.tabPageL2Vision.Controls.Add(this.label1);
             this.tabPageL2Vision.Controls.Add(this.buttonCloseV);
             this.tabPageL2Vision.Controls.Add(this.buttonOpenV);
             this.tabPageL2Vision.Location = new System.Drawing.Point(4, 29);
@@ -485,8 +488,39 @@ namespace L2ARAutomationSerialPort
             this.tabPageL2Vision.Text = "L2VISION";
             this.tabPageL2Vision.UseVisualStyleBackColor = true;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label1.Location = new System.Drawing.Point(104, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(288, 20);
+            this.label1.TabIndex = 50;
+            this.label1.Text = "              L2VISION COMMANDS             ";
+            // 
+            // buttonCloseV
+            // 
+            this.buttonCloseV.Location = new System.Drawing.Point(259, 98);
+            this.buttonCloseV.Name = "buttonCloseV";
+            this.buttonCloseV.Size = new System.Drawing.Size(114, 61);
+            this.buttonCloseV.TabIndex = 48;
+            this.buttonCloseV.Text = "CLOSE";
+            this.buttonCloseV.UseVisualStyleBackColor = true;
+            this.buttonCloseV.Click += new System.EventHandler(this.buttonCloseV_Click);
+            // 
+            // buttonOpenV
+            // 
+            this.buttonOpenV.Location = new System.Drawing.Point(78, 98);
+            this.buttonOpenV.Name = "buttonOpenV";
+            this.buttonOpenV.Size = new System.Drawing.Size(114, 61);
+            this.buttonOpenV.TabIndex = 47;
+            this.buttonOpenV.Text = "OPEN";
+            this.buttonOpenV.UseVisualStyleBackColor = true;
+            this.buttonOpenV.Click += new System.EventHandler(this.buttonOpenV_Click);
+            // 
             // tabPageSqt
             // 
+            this.tabPageSqt.Controls.Add(this.label2);
             this.tabPageSqt.Controls.Add(this.buttonDrStatus);
             this.tabPageSqt.Controls.Add(this.buttonUnlockDr);
             this.tabPageSqt.Controls.Add(this.buttonLockDr);
@@ -500,55 +534,25 @@ namespace L2ARAutomationSerialPort
             this.tabPageSqt.Text = "SQT";
             this.tabPageSqt.UseVisualStyleBackColor = true;
             // 
-            // buttonOpenV
+            // label2
             // 
-            this.buttonOpenV.Location = new System.Drawing.Point(78, 98);
-            this.buttonOpenV.Name = "buttonOpenV";
-            this.buttonOpenV.Size = new System.Drawing.Size(114, 61);
-            this.buttonOpenV.TabIndex = 47;
-            this.buttonOpenV.Text = "OPEN";
-            this.buttonOpenV.UseVisualStyleBackColor = true;
-            this.buttonOpenV.Click += new System.EventHandler(this.buttonOpenV_Click);
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label2.Location = new System.Drawing.Point(115, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(247, 20);
+            this.label2.TabIndex = 53;
+            this.label2.Text = "              SQT COMMANDS             ";
             // 
-            // buttonCloseV
+            // buttonDrStatus
             // 
-            this.buttonCloseV.Location = new System.Drawing.Point(259, 98);
-            this.buttonCloseV.Name = "buttonCloseV";
-            this.buttonCloseV.Size = new System.Drawing.Size(114, 61);
-            this.buttonCloseV.TabIndex = 48;
-            this.buttonCloseV.Text = "CLOSE";
-            this.buttonCloseV.UseVisualStyleBackColor = true;
-            this.buttonCloseV.Click += new System.EventHandler(this.buttonCloseV_Click);
-            // 
-            // buttonMoveUp
-            // 
-            this.buttonMoveUp.Location = new System.Drawing.Point(83, 90);
-            this.buttonMoveUp.Name = "buttonMoveUp";
-            this.buttonMoveUp.Size = new System.Drawing.Size(114, 61);
-            this.buttonMoveUp.TabIndex = 48;
-            this.buttonMoveUp.Text = "MOVE UP";
-            this.buttonMoveUp.UseVisualStyleBackColor = true;
-            this.buttonMoveUp.Click += new System.EventHandler(this.buttonMoveUp_Click);
-            // 
-            // buttonMoveDown
-            // 
-            this.buttonMoveDown.Location = new System.Drawing.Point(258, 90);
-            this.buttonMoveDown.Name = "buttonMoveDown";
-            this.buttonMoveDown.Size = new System.Drawing.Size(114, 61);
-            this.buttonMoveDown.TabIndex = 49;
-            this.buttonMoveDown.Text = "MOVE DOWN";
-            this.buttonMoveDown.UseVisualStyleBackColor = true;
-            this.buttonMoveDown.Click += new System.EventHandler(this.buttonMoveDown_Click);
-            // 
-            // buttonLockDr
-            // 
-            this.buttonLockDr.Location = new System.Drawing.Point(83, 170);
-            this.buttonLockDr.Name = "buttonLockDr";
-            this.buttonLockDr.Size = new System.Drawing.Size(114, 61);
-            this.buttonLockDr.TabIndex = 50;
-            this.buttonLockDr.Text = "LOCK DRAWER";
-            this.buttonLockDr.UseVisualStyleBackColor = true;
-            this.buttonLockDr.Click += new System.EventHandler(this.buttonLockDr_Click);
+            this.buttonDrStatus.Location = new System.Drawing.Point(166, 268);
+            this.buttonDrStatus.Name = "buttonDrStatus";
+            this.buttonDrStatus.Size = new System.Drawing.Size(114, 61);
+            this.buttonDrStatus.TabIndex = 52;
+            this.buttonDrStatus.Text = "DRAWER STATUS";
+            this.buttonDrStatus.UseVisualStyleBackColor = true;
+            this.buttonDrStatus.Click += new System.EventHandler(this.buttonDrStatus_Click);
             // 
             // buttonUnlockDr
             // 
@@ -560,15 +564,35 @@ namespace L2ARAutomationSerialPort
             this.buttonUnlockDr.UseVisualStyleBackColor = true;
             this.buttonUnlockDr.Click += new System.EventHandler(this.buttonUnlockDr_Click);
             // 
-            // buttonDrStatus
+            // buttonLockDr
             // 
-            this.buttonDrStatus.Location = new System.Drawing.Point(166, 268);
-            this.buttonDrStatus.Name = "buttonDrStatus";
-            this.buttonDrStatus.Size = new System.Drawing.Size(114, 61);
-            this.buttonDrStatus.TabIndex = 52;
-            this.buttonDrStatus.Text = "DRAWER STATUS";
-            this.buttonDrStatus.UseVisualStyleBackColor = true;
-            this.buttonDrStatus.Click += new System.EventHandler(this.buttonDrStatus_Click);
+            this.buttonLockDr.Location = new System.Drawing.Point(83, 170);
+            this.buttonLockDr.Name = "buttonLockDr";
+            this.buttonLockDr.Size = new System.Drawing.Size(114, 61);
+            this.buttonLockDr.TabIndex = 50;
+            this.buttonLockDr.Text = "LOCK DRAWER";
+            this.buttonLockDr.UseVisualStyleBackColor = true;
+            this.buttonLockDr.Click += new System.EventHandler(this.buttonLockDr_Click);
+            // 
+            // buttonMoveDown
+            // 
+            this.buttonMoveDown.Location = new System.Drawing.Point(258, 90);
+            this.buttonMoveDown.Name = "buttonMoveDown";
+            this.buttonMoveDown.Size = new System.Drawing.Size(114, 61);
+            this.buttonMoveDown.TabIndex = 49;
+            this.buttonMoveDown.Text = "MOVE DOWN";
+            this.buttonMoveDown.UseVisualStyleBackColor = true;
+            this.buttonMoveDown.Click += new System.EventHandler(this.buttonMoveDown_Click);
+            // 
+            // buttonMoveUp
+            // 
+            this.buttonMoveUp.Location = new System.Drawing.Point(83, 90);
+            this.buttonMoveUp.Name = "buttonMoveUp";
+            this.buttonMoveUp.Size = new System.Drawing.Size(114, 61);
+            this.buttonMoveUp.TabIndex = 48;
+            this.buttonMoveUp.Text = "MOVE UP";
+            this.buttonMoveUp.UseVisualStyleBackColor = true;
+            this.buttonMoveUp.Click += new System.EventHandler(this.buttonMoveUp_Click);
             // 
             // FormSerialPortAutomation
             // 
@@ -603,7 +627,9 @@ namespace L2ARAutomationSerialPort
             this.tabPageDepth.ResumeLayout(false);
             this.tabPageDepth.PerformLayout();
             this.tabPageL2Vision.ResumeLayout(false);
+            this.tabPageL2Vision.PerformLayout();
             this.tabPageSqt.ResumeLayout(false);
+            this.tabPageSqt.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -657,5 +683,7 @@ namespace L2ARAutomationSerialPort
         private System.Windows.Forms.Button buttonLockDr;
         private System.Windows.Forms.Button buttonMoveDown;
         private System.Windows.Forms.Button buttonMoveUp;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }

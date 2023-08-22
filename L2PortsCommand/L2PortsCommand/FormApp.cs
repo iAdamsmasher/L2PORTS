@@ -194,5 +194,6 @@ namespace L2ARAutomationSerialPort
         {
             serialCmd.sendSerialComand("H1STAUS");
         }
+
     }
 }
