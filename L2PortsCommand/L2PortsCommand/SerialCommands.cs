@@ -40,6 +40,7 @@ namespace L2PortsCommand
 
                 serialPort.Open();
                 serialPort.WriteLine(string.Format("{0}\r\n", serialCmd));
+                frmApp.textBoxResult.Text += "Response:" + serialPort.ReadExisting();
 
                 if (serialPort.IsOpen)
                     serialPort.Close();
