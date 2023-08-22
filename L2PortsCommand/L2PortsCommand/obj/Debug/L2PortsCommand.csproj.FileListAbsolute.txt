@@ -14,4 +14,3 @@ C:\DevelopmentProjects\L2Ports\L2PORTS\L2PortsCommand\L2PortsCommand\bin\Debug\L
 C:\DevelopmentProjects\L2Ports\L2PORTS\L2PortsCommand\L2PortsCommand\obj\Debug\L2ARAutomationSerialPort.FormSerialPortAutomation.resources
 C:\DevelopmentProjects\L2Ports\L2PORTS\L2PortsCommand\L2PortsCommand\obj\Debug\L2PortsCommand.Properties.Resources.resources
 C:\DevelopmentProjects\L2Ports\L2PORTS\L2PortsCommand\L2PortsCommand\obj\Debug\L2PortsCommand.csproj.GenerateResource.Cache
-C:\DevelopmentProjects\L2Ports\L2PORTS\L2PortsCommand\L2PortsCommand\obj\Debug\L2PortsCommand.csprojResolveAssemblyReference.cache

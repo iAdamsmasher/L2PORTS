@@ -162,6 +162,37 @@ namespace L2ARAutomationSerialPort
             comboBoxPorts.Items.AddRange(ports);
         }
 
-       
+        private void buttonMoveUp_Click(object sender, EventArgs e)
+        {
+            serialCmd.sendSerialComand("H1UP");
+            buttonMoveUp.BackColor = Color.Green;
+            buttonMoveDown.BackColor = Color.Red;
+        }
+
+        private void buttonMoveDown_Click(object sender, EventArgs e)
+        {
+            serialCmd.sendSerialComand("H1DOWN");
+            buttonMoveDown.BackColor = Color.Green;
+            buttonMoveUp.BackColor = Color.Red;
+        }
+
+        private void buttonLockDr_Click(object sender, EventArgs e)
+        {
+            serialCmd.sendSerialComand("H2ON");
+            buttonLockDr.BackColor = Color.Green;
+            buttonUnlockDr.BackColor = Color.Red;
+        }
+
+        private void buttonUnlockDr_Click(object sender, EventArgs e)
+        {
+            serialCmd.sendSerialComand("H2DOWN");
+            buttonUnlockDr.BackColor = Color.Green;
+            buttonLockDr.BackColor = Color.Red;
+        }
+
+        private void buttonDrStatus_Click(object sender, EventArgs e)
+        {
+            serialCmd.sendSerialComand("H1STAUS");
+        }
     }
 }
