@@ -185,14 +185,14 @@ namespace L2ARAutomationSerialPort
 
         private void buttonUnlockDr_Click(object sender, EventArgs e)
         {
-            serialCmd.sendSerialComand("H2DOWN");
+            serialCmd.sendSerialComand("H2OFF");
             buttonUnlockDr.BackColor = Color.Green;
             buttonLockDr.BackColor = Color.Red;
         }
 
         private void buttonDrStatus_Click(object sender, EventArgs e)
         {
-            serialCmd.sendSerialComand("H1STAUS");
+            serialCmd.sendSerialComand("H1STATUS");
         }
 
     }
