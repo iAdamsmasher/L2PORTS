@@ -254,12 +254,16 @@ namespace L2ARAutomationSerialPort
             // 
             // buttonClear
             // 
+            this.buttonClear.BackColor = System.Drawing.Color.SkyBlue;
+            this.buttonClear.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonClear.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonClear.ForeColor = System.Drawing.Color.Black;
             this.buttonClear.Location = new System.Drawing.Point(271, 589);
             this.buttonClear.Name = "buttonClear";
             this.buttonClear.Size = new System.Drawing.Size(97, 31);
             this.buttonClear.TabIndex = 23;
             this.buttonClear.Text = "CLEAR";
-            this.buttonClear.UseVisualStyleBackColor = true;
+            this.buttonClear.UseVisualStyleBackColor = false;
             this.buttonClear.Click += new System.EventHandler(this.buttonClear_Click);
             // 
             // buttonAudio
@@ -323,12 +327,13 @@ namespace L2ARAutomationSerialPort
             // labelL2ARCommands
             // 
             this.labelL2ARCommands.AutoSize = true;
-            this.labelL2ARCommands.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.labelL2ARCommands.Location = new System.Drawing.Point(104, 0);
+            this.labelL2ARCommands.BackColor = System.Drawing.Color.Teal;
+            this.labelL2ARCommands.ForeColor = System.Drawing.Color.MediumSpringGreen;
+            this.labelL2ARCommands.Location = new System.Drawing.Point(61, 0);
             this.labelL2ARCommands.Name = "labelL2ARCommands";
-            this.labelL2ARCommands.Size = new System.Drawing.Size(256, 20);
+            this.labelL2ARCommands.Size = new System.Drawing.Size(344, 20);
             this.labelL2ARCommands.TabIndex = 31;
-            this.labelL2ARCommands.Text = "              L2AR COMMANDS             ";
+            this.labelL2ARCommands.Text = "                        L2AR COMMANDS                         ";
             // 
             // tabControlMain
             // 
@@ -346,6 +351,7 @@ namespace L2ARAutomationSerialPort
             // 
             // tabPageL2AR
             // 
+            this.tabPageL2AR.BackColor = System.Drawing.Color.Transparent;
             this.tabPageL2AR.Controls.Add(this.buttonHeadSetOff);
             this.tabPageL2AR.Controls.Add(this.buttonHeadSetOn);
             this.tabPageL2AR.Controls.Add(this.buttonOpenDrawer);
@@ -359,14 +365,13 @@ namespace L2ARAutomationSerialPort
             this.tabPageL2AR.Controls.Add(this.buttonDownClip);
             this.tabPageL2AR.Controls.Add(this.buttonUSBOut);
             this.tabPageL2AR.Controls.Add(this.buttonUSBIn);
-            this.tabPageL2AR.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.tabPageL2AR.ForeColor = System.Drawing.Color.Black;
             this.tabPageL2AR.Location = new System.Drawing.Point(4, 29);
             this.tabPageL2AR.Name = "tabPageL2AR";
             this.tabPageL2AR.Padding = new System.Windows.Forms.Padding(3);
             this.tabPageL2AR.Size = new System.Drawing.Size(480, 575);
             this.tabPageL2AR.TabIndex = 0;
             this.tabPageL2AR.Text = "L2AR";
-            this.tabPageL2AR.UseVisualStyleBackColor = true;
             // 
             // buttonHeadSetOff
             // 
@@ -408,12 +413,13 @@ namespace L2ARAutomationSerialPort
             // labelDepthCommands
             // 
             this.labelDepthCommands.AutoSize = true;
-            this.labelDepthCommands.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.labelDepthCommands.Location = new System.Drawing.Point(101, 3);
+            this.labelDepthCommands.BackColor = System.Drawing.Color.DarkCyan;
+            this.labelDepthCommands.ForeColor = System.Drawing.Color.MediumSpringGreen;
+            this.labelDepthCommands.Location = new System.Drawing.Point(59, 0);
             this.labelDepthCommands.Name = "labelDepthCommands";
-            this.labelDepthCommands.Size = new System.Drawing.Size(269, 20);
+            this.labelDepthCommands.Size = new System.Drawing.Size(357, 20);
             this.labelDepthCommands.TabIndex = 49;
-            this.labelDepthCommands.Text = "              DEPTH COMMANDS             ";
+            this.labelDepthCommands.Text = "                        DEPTH COMMANDS                         ";
             // 
             // buttonDown
             // 
@@ -491,12 +497,13 @@ namespace L2ARAutomationSerialPort
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label1.Location = new System.Drawing.Point(104, 0);
+            this.label1.BackColor = System.Drawing.Color.DarkCyan;
+            this.label1.ForeColor = System.Drawing.Color.MediumSpringGreen;
+            this.label1.Location = new System.Drawing.Point(46, 3);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(288, 20);
+            this.label1.Size = new System.Drawing.Size(376, 20);
             this.label1.TabIndex = 50;
-            this.label1.Text = "              L2VISION COMMANDS             ";
+            this.label1.Text = "                        L2VISION COMMANDS                         ";
             // 
             // buttonCloseV
             // 
@@ -537,12 +544,13 @@ namespace L2ARAutomationSerialPort
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label2.Location = new System.Drawing.Point(115, 0);
+            this.label2.BackColor = System.Drawing.Color.DarkCyan;
+            this.label2.ForeColor = System.Drawing.Color.MediumSpringGreen;
+            this.label2.Location = new System.Drawing.Point(61, 3);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(247, 20);
+            this.label2.Size = new System.Drawing.Size(355, 20);
             this.label2.TabIndex = 53;
-            this.label2.Text = "              SQT COMMANDS             ";
+            this.label2.Text = "                           SQT COMMANDS                           ";
             // 
             // buttonDrStatus
             // 

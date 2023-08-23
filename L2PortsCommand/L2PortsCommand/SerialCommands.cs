@@ -29,8 +29,8 @@ namespace L2PortsCommand
                 serialPort.DataBits = int.Parse(frmApp.comboBoxDataBits.Text);
                 serialPort.DtrEnable = false;
                 serialPort.RtsEnable = false;
-                serialPort.ReadTimeout = 10;
-                serialPort.WriteTimeout = 10;
+                serialPort.ReadTimeout = 50;
+                serialPort.WriteTimeout = 50;
                 serialPort.Parity = Parity.None;
 
                 if (frmApp.comboBoxStopBits.Text == "One")
@@ -65,8 +65,8 @@ namespace L2PortsCommand
                 serialPort.DataBits = int.Parse(frmApp.comboBoxDataBits.Text);
                 serialPort.DtrEnable = false;
                 serialPort.RtsEnable = false;
-                serialPort.ReadTimeout = 10;
-                serialPort.WriteTimeout = 10;
+                serialPort.ReadTimeout = 50;
+                serialPort.WriteTimeout = 50;
                 serialPort.Parity = Parity.None;
 
                 if (frmApp.comboBoxStopBits.Text == "One")
