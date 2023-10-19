@@ -78,11 +78,19 @@ namespace L2ARAutomationSerialPort
             this.buttonLockDr = new System.Windows.Forms.Button();
             this.buttonMoveDown = new System.Windows.Forms.Button();
             this.buttonMoveUp = new System.Windows.Forms.Button();
+            this.tabPageRGB = new System.Windows.Forms.TabPage();
+            this.label3 = new System.Windows.Forms.Label();
+            this.buttonUpRGB = new System.Windows.Forms.Button();
+            this.buttonDownRGB = new System.Windows.Forms.Button();
+            this.buttonLightOn = new System.Windows.Forms.Button();
+            this.buttonLightOff = new System.Windows.Forms.Button();
+            this.labelUpdating = new System.Windows.Forms.Label();
             this.tabControlMain.SuspendLayout();
             this.tabPageL2AR.SuspendLayout();
             this.tabPageDepth.SuspendLayout();
             this.tabPageL2Vision.SuspendLayout();
             this.tabPageSqt.SuspendLayout();
+            this.tabPageRGB.SuspendLayout();
             this.SuspendLayout();
             // 
             // labelPort
@@ -327,7 +335,7 @@ namespace L2ARAutomationSerialPort
             // labelL2ARCommands
             // 
             this.labelL2ARCommands.AutoSize = true;
-            this.labelL2ARCommands.BackColor = System.Drawing.Color.Teal;
+            this.labelL2ARCommands.BackColor = System.Drawing.Color.SteelBlue;
             this.labelL2ARCommands.ForeColor = System.Drawing.Color.MediumSpringGreen;
             this.labelL2ARCommands.Location = new System.Drawing.Point(61, 0);
             this.labelL2ARCommands.Name = "labelL2ARCommands";
@@ -341,6 +349,7 @@ namespace L2ARAutomationSerialPort
             this.tabControlMain.Controls.Add(this.tabPageDepth);
             this.tabControlMain.Controls.Add(this.tabPageL2Vision);
             this.tabControlMain.Controls.Add(this.tabPageSqt);
+            this.tabControlMain.Controls.Add(this.tabPageRGB);
             this.tabControlMain.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.tabControlMain.ItemSize = new System.Drawing.Size(54, 25);
             this.tabControlMain.Location = new System.Drawing.Point(398, 12);
@@ -413,7 +422,7 @@ namespace L2ARAutomationSerialPort
             // labelDepthCommands
             // 
             this.labelDepthCommands.AutoSize = true;
-            this.labelDepthCommands.BackColor = System.Drawing.Color.DarkCyan;
+            this.labelDepthCommands.BackColor = System.Drawing.Color.SteelBlue;
             this.labelDepthCommands.ForeColor = System.Drawing.Color.MediumSpringGreen;
             this.labelDepthCommands.Location = new System.Drawing.Point(59, 0);
             this.labelDepthCommands.Name = "labelDepthCommands";
@@ -483,6 +492,7 @@ namespace L2ARAutomationSerialPort
             // 
             // tabPageL2Vision
             // 
+            this.tabPageL2Vision.Controls.Add(this.labelUpdating);
             this.tabPageL2Vision.Controls.Add(this.label1);
             this.tabPageL2Vision.Controls.Add(this.buttonCloseV);
             this.tabPageL2Vision.Controls.Add(this.buttonOpenV);
@@ -497,7 +507,7 @@ namespace L2ARAutomationSerialPort
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.DarkCyan;
+            this.label1.BackColor = System.Drawing.Color.SteelBlue;
             this.label1.ForeColor = System.Drawing.Color.MediumSpringGreen;
             this.label1.Location = new System.Drawing.Point(46, 3);
             this.label1.Name = "label1";
@@ -544,7 +554,7 @@ namespace L2ARAutomationSerialPort
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.DarkCyan;
+            this.label2.BackColor = System.Drawing.Color.SteelBlue;
             this.label2.ForeColor = System.Drawing.Color.MediumSpringGreen;
             this.label2.Location = new System.Drawing.Point(61, 3);
             this.label2.Name = "label2";
@@ -602,6 +612,78 @@ namespace L2ARAutomationSerialPort
             this.buttonMoveUp.UseVisualStyleBackColor = true;
             this.buttonMoveUp.Click += new System.EventHandler(this.buttonMoveUp_Click);
             // 
+            // tabPageRGB
+            // 
+            this.tabPageRGB.Controls.Add(this.buttonLightOff);
+            this.tabPageRGB.Controls.Add(this.buttonLightOn);
+            this.tabPageRGB.Controls.Add(this.buttonDownRGB);
+            this.tabPageRGB.Controls.Add(this.buttonUpRGB);
+            this.tabPageRGB.Controls.Add(this.label3);
+            this.tabPageRGB.Location = new System.Drawing.Point(4, 29);
+            this.tabPageRGB.Name = "tabPageRGB";
+            this.tabPageRGB.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageRGB.Size = new System.Drawing.Size(480, 575);
+            this.tabPageRGB.TabIndex = 4;
+            this.tabPageRGB.Text = "RGB";
+            this.tabPageRGB.UseVisualStyleBackColor = true;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.SteelBlue;
+            this.label3.ForeColor = System.Drawing.Color.MediumSpringGreen;
+            this.label3.Location = new System.Drawing.Point(57, 3);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(359, 20);
+            this.label3.TabIndex = 54;
+            this.label3.Text = "                           RGB COMMANDS                           ";
+            // 
+            // buttonUpRGB
+            // 
+            this.buttonUpRGB.Location = new System.Drawing.Point(104, 74);
+            this.buttonUpRGB.Name = "buttonUpRGB";
+            this.buttonUpRGB.Size = new System.Drawing.Size(115, 59);
+            this.buttonUpRGB.TabIndex = 55;
+            this.buttonUpRGB.Text = "OPEN";
+            this.buttonUpRGB.UseVisualStyleBackColor = true;
+            // 
+            // buttonDownRGB
+            // 
+            this.buttonDownRGB.Location = new System.Drawing.Point(252, 74);
+            this.buttonDownRGB.Name = "buttonDownRGB";
+            this.buttonDownRGB.Size = new System.Drawing.Size(115, 59);
+            this.buttonDownRGB.TabIndex = 56;
+            this.buttonDownRGB.Text = "CLOSE";
+            this.buttonDownRGB.UseVisualStyleBackColor = true;
+            // 
+            // buttonLightOn
+            // 
+            this.buttonLightOn.Location = new System.Drawing.Point(104, 168);
+            this.buttonLightOn.Name = "buttonLightOn";
+            this.buttonLightOn.Size = new System.Drawing.Size(115, 59);
+            this.buttonLightOn.TabIndex = 57;
+            this.buttonLightOn.Text = "LIGHT_ON";
+            this.buttonLightOn.UseVisualStyleBackColor = true;
+            // 
+            // buttonLightOff
+            // 
+            this.buttonLightOff.Location = new System.Drawing.Point(252, 168);
+            this.buttonLightOff.Name = "buttonLightOff";
+            this.buttonLightOff.Size = new System.Drawing.Size(115, 59);
+            this.buttonLightOff.TabIndex = 58;
+            this.buttonLightOff.Text = "LIGHT_OFF";
+            this.buttonLightOff.UseVisualStyleBackColor = true;
+            // 
+            // labelUpdating
+            // 
+            this.labelUpdating.AutoSize = true;
+            this.labelUpdating.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.labelUpdating.Location = new System.Drawing.Point(174, 303);
+            this.labelUpdating.Name = "labelUpdating";
+            this.labelUpdating.Size = new System.Drawing.Size(108, 20);
+            this.labelUpdating.TabIndex = 51;
+            this.labelUpdating.Text = "UPDATING....";
+            // 
             // FormSerialPortAutomation
             // 
             this.AcceptButton = this.buttonSend;
@@ -638,6 +720,8 @@ namespace L2ARAutomationSerialPort
             this.tabPageL2Vision.PerformLayout();
             this.tabPageSqt.ResumeLayout(false);
             this.tabPageSqt.PerformLayout();
+            this.tabPageRGB.ResumeLayout(false);
+            this.tabPageRGB.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -693,5 +777,12 @@ namespace L2ARAutomationSerialPort
         private System.Windows.Forms.Button buttonMoveUp;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TabPage tabPageRGB;
+        private System.Windows.Forms.Button buttonLightOff;
+        private System.Windows.Forms.Button buttonLightOn;
+        private System.Windows.Forms.Button buttonDownRGB;
+        private System.Windows.Forms.Button buttonUpRGB;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label labelUpdating;
     }
 }
