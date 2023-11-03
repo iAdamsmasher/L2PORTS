@@ -33,73 +33,73 @@ namespace L2ARAutomationSerialPort
         }
         private void buttonOpenDrawer_Click(object sender, EventArgs e)
         {
-            serialCmd.sendSerialComand("OPEN");
+            serialCmd.sendSerialComandAndRead("OPEN");
             buttonOpenDrawer.BackColor = Color.Green;
             buttonCloseDrawer.BackColor = Color.Red;
         }
         private void buttonCloseDrawer_Click(object sender, EventArgs e)
         {
-            serialCmd.sendSerialComand("CLOSE");
+            serialCmd.sendSerialComandAndRead("CLOSE");
             buttonCloseDrawer.BackColor = Color.Green;
             buttonOpenDrawer.BackColor = Color.Red;
         }
         private void buttonUpClip_Click(object sender, EventArgs e)
         {
-            serialCmd.sendSerialComand("SIXON");
+            serialCmd.sendSerialComandAndRead("SIXON");
             buttonUpClip.BackColor = Color.Green;
             buttonDownClip.BackColor = Color.Red;
         }
         private void buttonDownClip_Click(object sender, EventArgs e)
         {
-            serialCmd.sendSerialComand("SIXOFF");
+            serialCmd.sendSerialComandAndRead("SIXOFF");
             buttonDownClip.BackColor = Color.Green;
             buttonUpClip.BackColor = Color.Red;
         }
         private void buttonUSBIn_Click(object sender, EventArgs e)
         {
-            serialCmd.sendSerialComand("FOURON");
+            serialCmd.sendSerialComandAndRead("FOURON");
             buttonUSBIn.BackColor = Color.Green;
             buttonUSBOut.BackColor = Color.Red;
         }
         private void buttonUSBOut_Click(object sender, EventArgs e)
         {
-            serialCmd.sendSerialComand("FOUROFF");
+            serialCmd.sendSerialComandAndRead("FOUROFF");
             buttonUSBOut.BackColor = Color.Green;
             buttonUSBIn.BackColor = Color.Red;
         }
         private void buttonP3In_Click(object sender, EventArgs e)
         {
-            serialCmd.sendSerialComand("FIVEON");
+            serialCmd.sendSerialComandAndRead("FIVEON");
             buttonP3In.BackColor = Color.Green;
             buttonP3Out.BackColor = Color.Red;
         }
         private void buttonP3Out_Click(object sender, EventArgs e)
         {
-            serialCmd.sendSerialComand("FIVEOFF");
+            serialCmd.sendSerialComandAndRead("FIVEOFF");
             buttonP3Out.BackColor = Color.Green;
             buttonP3In.BackColor = Color.Red;
         }
         private void buttonAudio_Click(object sender, EventArgs e)
         {
-            serialCmd.sendSerialComand("Audio");
+            serialCmd.sendSerialComandAndRead("Audio");
             buttonAudio.BackColor = Color.Green;
             buttonRadio.BackColor = Color.Red;
         }
         private void buttonRadio_Click(object sender, EventArgs e)
         {
-            serialCmd.sendSerialComand("Radio");
+            serialCmd.sendSerialComandAndRead("Radio");
             buttonRadio.BackColor = Color.Green;
             buttonAudio.BackColor = Color.Red;
         }
         private void buttonHeadSetOn_Click(object sender, EventArgs e)
         {
-            serialCmd.sendSerialComand("ONAUD");
+            serialCmd.sendSerialComandAndRead("ONAUD");
             buttonHeadSetOn.BackColor = Color.Green;
             buttonHeadSetOff.BackColor = Color.Red;
         }
         private void buttonHeadSetOff_Click(object sender, EventArgs e)
         {
-            serialCmd.sendSerialComand("OFFAUD");
+            serialCmd.sendSerialComandAndRead("OFFAUD");
             buttonHeadSetOff.BackColor = Color.Green;
             buttonHeadSetOn.BackColor = Color.Red;
         }
@@ -135,13 +135,13 @@ namespace L2ARAutomationSerialPort
         }
         private void buttonOpenV_Click(object sender, EventArgs e)
         {
-            serialCmd.sendSerialComand("OUT6");
+            serialCmd.sendSerialComandAndRead("OUT6");
             buttonOpenV.BackColor = Color.Green;
             buttonCloseV.BackColor = Color.Red;
         }
         private void buttonCloseV_Click(object sender, EventArgs e)
         {
-            serialCmd.sendSerialComand("OUT8");
+            serialCmd.sendSerialComandAndRead("OUT8");
             buttonCloseV.BackColor = Color.Green;
             buttonOpenV.BackColor = Color.Red;
         }
@@ -151,7 +151,7 @@ namespace L2ARAutomationSerialPort
         }
         private void buttonSend_Click(object sender, EventArgs e)
         {
-            serialCmd.sendSerialComand(textBoxSend.Text);
+            serialCmd.sendSerialComandAndRead(textBoxSend.Text);
             textBoxSend.Text = "";
 
         }
@@ -164,36 +164,50 @@ namespace L2ARAutomationSerialPort
 
         private void buttonMoveUp_Click(object sender, EventArgs e)
         {
-            serialCmd.sendSerialComand("H1UP");
+            serialCmd.sendSerialComandAndRead("H1UP");
             buttonMoveUp.BackColor = Color.Green;
             buttonMoveDown.BackColor = Color.Red;
         }
 
         private void buttonMoveDown_Click(object sender, EventArgs e)
         {
-            serialCmd.sendSerialComand("H1DOWN");
+            serialCmd.sendSerialComandAndRead("H1DOWN");
             buttonMoveDown.BackColor = Color.Green;
             buttonMoveUp.BackColor = Color.Red;
         }
 
         private void buttonLockDr_Click(object sender, EventArgs e)
         {
-            serialCmd.sendSerialComand("H2ON");
+            serialCmd.sendSerialComandAndRead("H2ON");
             buttonLockDr.BackColor = Color.Green;
             buttonUnlockDr.BackColor = Color.Red;
         }
 
         private void buttonUnlockDr_Click(object sender, EventArgs e)
         {
-            serialCmd.sendSerialComand("H2OFF");
+            serialCmd.sendSerialComandAndRead("H2OFF");
             buttonUnlockDr.BackColor = Color.Green;
             buttonLockDr.BackColor = Color.Red;
         }
 
         private void buttonDrStatus_Click(object sender, EventArgs e)
         {
-            serialCmd.sendSerialComand("H1STATUS");
+            serialCmd.sendSerialComandAndRead("H1STATUS");
         }
 
+        private void buttonLightOn_Click(object sender, EventArgs e)
+        {
+            serialCmd.sendSerialComandAndRead("SETI:0E");
+        }
+
+        private void buttonLightOff_Click(object sender, EventArgs e)
+        {
+            serialCmd.sendSerialComandAndRead("SETI:00");
+        }
+
+        private void buttonFetl_Click(object sender, EventArgs e)
+        {
+            serialCmd.sendSerialComandAndRead("FETL");
+        }
     }
 }
