@@ -16,8 +16,8 @@ namespace L2PortsCommand
         SerialPort serialPort;
 
         FormSerialPortAutomation frmApp = FormSerialPortAutomation.getInstance();
-       
-        public void sendSerialComandAndRead(string serialCmd)
+
+        public void sendSerialComandAndRead(string serialCmd, string stationType)
         {
             frmApp.textBoxResult.Text += ">" + Environment.NewLine;
             try
@@ -30,8 +30,8 @@ namespace L2PortsCommand
                 serialPort.DataBits = int.Parse(frmApp.comboBoxDataBits.Text);
                 serialPort.DtrEnable = false;
                 serialPort.RtsEnable = false;
-                serialPort.ReadTimeout = 500;
-                serialPort.WriteTimeout = 500;
+                serialPort.ReadTimeout = 10000;
+                serialPort.WriteTimeout = 10000;
                 serialPort.Parity = Parity.None;
 
                 if (frmApp.comboBoxStopBits.Text == "One")
@@ -41,8 +41,11 @@ namespace L2PortsCommand
 
                 serialPort.Open();
                 serialPort.WriteLine(string.Format("{0}\r\n", serialCmd));
-                frmApp.textBoxResult.Text += "Response:" + serialPort.ReadLine();// ReadExisting();
-
+                if (stationType == "L2AR")
+                    frmApp.textBoxResult.Text += "Response:" + serialPort.ReadExisting();
+                else
+                    frmApp.textBoxResult.Text += "Response:" + serialPort.ReadLine();
+                   
                 if (serialPort.IsOpen)
                     serialPort.Close();
 

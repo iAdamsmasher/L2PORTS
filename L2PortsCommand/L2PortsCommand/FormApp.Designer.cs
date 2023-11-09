@@ -80,13 +80,12 @@ namespace L2ARAutomationSerialPort
             this.buttonMoveDown = new System.Windows.Forms.Button();
             this.buttonMoveUp = new System.Windows.Forms.Button();
             this.tabPageRGB = new System.Windows.Forms.TabPage();
+            this.buttonFetl = new System.Windows.Forms.Button();
             this.buttonLightOff = new System.Windows.Forms.Button();
             this.buttonLightOn = new System.Windows.Forms.Button();
             this.buttonDownRGB = new System.Windows.Forms.Button();
             this.buttonUpRGB = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.buttonColor = new System.Windows.Forms.Button();
-            this.buttonFetl = new System.Windows.Forms.Button();
             this.tabControlMain.SuspendLayout();
             this.tabPageL2AR.SuspendLayout();
             this.tabPageDepth.SuspendLayout();
@@ -98,7 +97,7 @@ namespace L2ARAutomationSerialPort
             // labelPort
             // 
             this.labelPort.AutoSize = true;
-            this.labelPort.Location = new System.Drawing.Point(74, 63);
+            this.labelPort.Location = new System.Drawing.Point(65, 44);
             this.labelPort.Name = "labelPort";
             this.labelPort.Size = new System.Drawing.Size(59, 20);
             this.labelPort.TabIndex = 0;
@@ -107,7 +106,7 @@ namespace L2ARAutomationSerialPort
             // labelBaudRate
             // 
             this.labelBaudRate.AutoSize = true;
-            this.labelBaudRate.Location = new System.Drawing.Point(39, 115);
+            this.labelBaudRate.Location = new System.Drawing.Point(30, 96);
             this.labelBaudRate.Name = "labelBaudRate";
             this.labelBaudRate.Size = new System.Drawing.Size(94, 20);
             this.labelBaudRate.TabIndex = 1;
@@ -116,7 +115,7 @@ namespace L2ARAutomationSerialPort
             // labelDataBits
             // 
             this.labelDataBits.AutoSize = true;
-            this.labelDataBits.Location = new System.Drawing.Point(50, 172);
+            this.labelDataBits.Location = new System.Drawing.Point(41, 153);
             this.labelDataBits.Name = "labelDataBits";
             this.labelDataBits.Size = new System.Drawing.Size(79, 20);
             this.labelDataBits.TabIndex = 2;
@@ -125,7 +124,7 @@ namespace L2ARAutomationSerialPort
             // labelStopBits
             // 
             this.labelStopBits.AutoSize = true;
-            this.labelStopBits.Location = new System.Drawing.Point(50, 228);
+            this.labelStopBits.Location = new System.Drawing.Point(41, 209);
             this.labelStopBits.Name = "labelStopBits";
             this.labelStopBits.Size = new System.Drawing.Size(82, 20);
             this.labelStopBits.TabIndex = 3;
@@ -134,7 +133,7 @@ namespace L2ARAutomationSerialPort
             // comboBoxPorts
             // 
             this.comboBoxPorts.FormattingEnabled = true;
-            this.comboBoxPorts.Location = new System.Drawing.Point(169, 63);
+            this.comboBoxPorts.Location = new System.Drawing.Point(160, 44);
             this.comboBoxPorts.Name = "comboBoxPorts";
             this.comboBoxPorts.Size = new System.Drawing.Size(121, 28);
             this.comboBoxPorts.TabIndex = 6;
@@ -146,7 +145,7 @@ namespace L2ARAutomationSerialPort
             this.comboBoxBoundRate.Items.AddRange(new object[] {
             "9600",
             "115200"});
-            this.comboBoxBoundRate.Location = new System.Drawing.Point(169, 112);
+            this.comboBoxBoundRate.Location = new System.Drawing.Point(160, 93);
             this.comboBoxBoundRate.Name = "comboBoxBoundRate";
             this.comboBoxBoundRate.Size = new System.Drawing.Size(121, 28);
             this.comboBoxBoundRate.TabIndex = 7;
@@ -155,7 +154,7 @@ namespace L2ARAutomationSerialPort
             // comboBoxDataBits
             // 
             this.comboBoxDataBits.FormattingEnabled = true;
-            this.comboBoxDataBits.Location = new System.Drawing.Point(169, 172);
+            this.comboBoxDataBits.Location = new System.Drawing.Point(160, 153);
             this.comboBoxDataBits.Name = "comboBoxDataBits";
             this.comboBoxDataBits.Size = new System.Drawing.Size(121, 28);
             this.comboBoxDataBits.TabIndex = 8;
@@ -167,7 +166,7 @@ namespace L2ARAutomationSerialPort
             this.comboBoxStopBits.Items.AddRange(new object[] {
             "One",
             "Two"});
-            this.comboBoxStopBits.Location = new System.Drawing.Point(169, 228);
+            this.comboBoxStopBits.Location = new System.Drawing.Point(160, 209);
             this.comboBoxStopBits.Name = "comboBoxStopBits";
             this.comboBoxStopBits.Size = new System.Drawing.Size(121, 28);
             this.comboBoxStopBits.TabIndex = 9;
@@ -315,7 +314,7 @@ namespace L2ARAutomationSerialPort
             // 
             // buttonSearch
             // 
-            this.buttonSearch.Location = new System.Drawing.Point(306, 57);
+            this.buttonSearch.Location = new System.Drawing.Point(297, 38);
             this.buttonSearch.Name = "buttonSearch";
             this.buttonSearch.Size = new System.Drawing.Size(75, 40);
             this.buttonSearch.TabIndex = 29;
@@ -640,9 +639,19 @@ namespace L2ARAutomationSerialPort
             this.tabPageRGB.Text = "RGB";
             this.tabPageRGB.UseVisualStyleBackColor = true;
             // 
+            // buttonFetl
+            // 
+            this.buttonFetl.Location = new System.Drawing.Point(104, 235);
+            this.buttonFetl.Name = "buttonFetl";
+            this.buttonFetl.Size = new System.Drawing.Size(115, 59);
+            this.buttonFetl.TabIndex = 59;
+            this.buttonFetl.Text = "LuxRead";
+            this.buttonFetl.UseVisualStyleBackColor = true;
+            this.buttonFetl.Click += new System.EventHandler(this.buttonFetl_Click);
+            // 
             // buttonLightOff
             // 
-            this.buttonLightOff.Location = new System.Drawing.Point(252, 168);
+            this.buttonLightOff.Location = new System.Drawing.Point(252, 152);
             this.buttonLightOff.Name = "buttonLightOff";
             this.buttonLightOff.Size = new System.Drawing.Size(115, 59);
             this.buttonLightOff.TabIndex = 58;
@@ -652,7 +661,7 @@ namespace L2ARAutomationSerialPort
             // 
             // buttonLightOn
             // 
-            this.buttonLightOn.Location = new System.Drawing.Point(104, 168);
+            this.buttonLightOn.Location = new System.Drawing.Point(104, 152);
             this.buttonLightOn.Name = "buttonLightOn";
             this.buttonLightOn.Size = new System.Drawing.Size(115, 59);
             this.buttonLightOn.TabIndex = 57;
@@ -689,32 +698,12 @@ namespace L2ARAutomationSerialPort
             this.label3.TabIndex = 54;
             this.label3.Text = "                           RGB COMMANDS                           ";
             // 
-            // buttonColor
-            // 
-            this.buttonColor.BackColor = System.Drawing.Color.SteelBlue;
-            this.buttonColor.Location = new System.Drawing.Point(0, -1);
-            this.buttonColor.Name = "buttonColor";
-            this.buttonColor.Size = new System.Drawing.Size(911, 16);
-            this.buttonColor.TabIndex = 33;
-            this.buttonColor.UseVisualStyleBackColor = false;
-            // 
-            // buttonFetl
-            // 
-            this.buttonFetl.Location = new System.Drawing.Point(104, 242);
-            this.buttonFetl.Name = "buttonFetl";
-            this.buttonFetl.Size = new System.Drawing.Size(115, 59);
-            this.buttonFetl.TabIndex = 59;
-            this.buttonFetl.Text = "LuxRead";
-            this.buttonFetl.UseVisualStyleBackColor = true;
-            this.buttonFetl.Click += new System.EventHandler(this.buttonFetl_Click);
-            // 
             // FormSerialPortAutomation
             // 
             this.AcceptButton = this.buttonSend;
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(911, 622);
-            this.Controls.Add(this.buttonColor);
             this.Controls.Add(this.tabControlMain);
             this.Controls.Add(this.labelName);
             this.Controls.Add(this.buttonClear);
@@ -809,7 +798,6 @@ namespace L2ARAutomationSerialPort
         private System.Windows.Forms.Button buttonUpRGB;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label labelUpdating;
-        private System.Windows.Forms.Button buttonColor;
         private System.Windows.Forms.Button buttonFetl;
     }
 }
