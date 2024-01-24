@@ -14,3 +14,4 @@ C:\DevelopmentProjects\L2PORTS\L2PortsCommand\L2PortsCommand\obj\Debug\L2PortsCo
 C:\DevelopmentProjects\L2PORTS\L2PortsCommand\L2PortsCommand\obj\Debug\SerialPortsCommands.csproj.GenerateResource.Cache
 C:\DevelopmentProjects\L2PORTS\L2PortsCommand\L2PortsCommand\obj\Debug\L2PortsCommand.exe
 C:\DevelopmentProjects\L2PORTS\L2PortsCommand\L2PortsCommand\obj\Debug\L2PortsCommand.pdb
+C:\DevelopmentProjects\L2PORTS\L2PortsCommand\L2PortsCommand\obj\Debug\SerialPortsCommands.csprojResolveAssemblyReference.cache

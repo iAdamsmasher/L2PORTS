@@ -86,6 +86,8 @@ namespace L2ARAutomationSerialPort
             this.buttonDownRGB = new System.Windows.Forms.Button();
             this.buttonUpRGB = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
+            this.LckOpen = new System.Windows.Forms.Button();
+            this.LckClose = new System.Windows.Forms.Button();
             this.tabControlMain.SuspendLayout();
             this.tabPageL2AR.SuspendLayout();
             this.tabPageDepth.SuspendLayout();
@@ -174,7 +176,7 @@ namespace L2ARAutomationSerialPort
             // 
             // buttonOpenDrawer
             // 
-            this.buttonOpenDrawer.Location = new System.Drawing.Point(100, 49);
+            this.buttonOpenDrawer.Location = new System.Drawing.Point(105, 112);
             this.buttonOpenDrawer.Name = "buttonOpenDrawer";
             this.buttonOpenDrawer.Size = new System.Drawing.Size(126, 62);
             this.buttonOpenDrawer.TabIndex = 12;
@@ -184,7 +186,7 @@ namespace L2ARAutomationSerialPort
             // 
             // buttonCloseDrawer
             // 
-            this.buttonCloseDrawer.Location = new System.Drawing.Point(234, 49);
+            this.buttonCloseDrawer.Location = new System.Drawing.Point(239, 112);
             this.buttonCloseDrawer.Name = "buttonCloseDrawer";
             this.buttonCloseDrawer.Size = new System.Drawing.Size(126, 62);
             this.buttonCloseDrawer.TabIndex = 13;
@@ -194,7 +196,7 @@ namespace L2ARAutomationSerialPort
             // 
             // buttonUpClip
             // 
-            this.buttonUpClip.Location = new System.Drawing.Point(100, 118);
+            this.buttonUpClip.Location = new System.Drawing.Point(105, 181);
             this.buttonUpClip.Name = "buttonUpClip";
             this.buttonUpClip.Size = new System.Drawing.Size(126, 62);
             this.buttonUpClip.TabIndex = 14;
@@ -204,7 +206,7 @@ namespace L2ARAutomationSerialPort
             // 
             // buttonDownClip
             // 
-            this.buttonDownClip.Location = new System.Drawing.Point(234, 118);
+            this.buttonDownClip.Location = new System.Drawing.Point(239, 181);
             this.buttonDownClip.Name = "buttonDownClip";
             this.buttonDownClip.Size = new System.Drawing.Size(126, 62);
             this.buttonDownClip.TabIndex = 15;
@@ -214,7 +216,7 @@ namespace L2ARAutomationSerialPort
             // 
             // buttonUSBIn
             // 
-            this.buttonUSBIn.Location = new System.Drawing.Point(100, 187);
+            this.buttonUSBIn.Location = new System.Drawing.Point(105, 250);
             this.buttonUSBIn.Name = "buttonUSBIn";
             this.buttonUSBIn.Size = new System.Drawing.Size(126, 62);
             this.buttonUSBIn.TabIndex = 16;
@@ -224,7 +226,7 @@ namespace L2ARAutomationSerialPort
             // 
             // buttonUSBOut
             // 
-            this.buttonUSBOut.Location = new System.Drawing.Point(234, 187);
+            this.buttonUSBOut.Location = new System.Drawing.Point(239, 250);
             this.buttonUSBOut.Name = "buttonUSBOut";
             this.buttonUSBOut.Size = new System.Drawing.Size(126, 62);
             this.buttonUSBOut.TabIndex = 17;
@@ -234,7 +236,7 @@ namespace L2ARAutomationSerialPort
             // 
             // buttonP3In
             // 
-            this.buttonP3In.Location = new System.Drawing.Point(100, 256);
+            this.buttonP3In.Location = new System.Drawing.Point(105, 319);
             this.buttonP3In.Name = "buttonP3In";
             this.buttonP3In.Size = new System.Drawing.Size(126, 62);
             this.buttonP3In.TabIndex = 18;
@@ -244,7 +246,7 @@ namespace L2ARAutomationSerialPort
             // 
             // buttonP3Out
             // 
-            this.buttonP3Out.Location = new System.Drawing.Point(234, 256);
+            this.buttonP3Out.Location = new System.Drawing.Point(239, 319);
             this.buttonP3Out.Name = "buttonP3Out";
             this.buttonP3Out.Size = new System.Drawing.Size(126, 62);
             this.buttonP3Out.TabIndex = 19;
@@ -277,7 +279,7 @@ namespace L2ARAutomationSerialPort
             // 
             // buttonAudio
             // 
-            this.buttonAudio.Location = new System.Drawing.Point(100, 325);
+            this.buttonAudio.Location = new System.Drawing.Point(105, 388);
             this.buttonAudio.Name = "buttonAudio";
             this.buttonAudio.Size = new System.Drawing.Size(126, 62);
             this.buttonAudio.TabIndex = 25;
@@ -287,7 +289,7 @@ namespace L2ARAutomationSerialPort
             // 
             // buttonRadio
             // 
-            this.buttonRadio.Location = new System.Drawing.Point(234, 325);
+            this.buttonRadio.Location = new System.Drawing.Point(239, 388);
             this.buttonRadio.Name = "buttonRadio";
             this.buttonRadio.Size = new System.Drawing.Size(126, 62);
             this.buttonRadio.TabIndex = 26;
@@ -362,6 +364,8 @@ namespace L2ARAutomationSerialPort
             // tabPageL2AR
             // 
             this.tabPageL2AR.BackColor = System.Drawing.Color.Transparent;
+            this.tabPageL2AR.Controls.Add(this.LckClose);
+            this.tabPageL2AR.Controls.Add(this.LckOpen);
             this.tabPageL2AR.Controls.Add(this.buttonHeadSetOff);
             this.tabPageL2AR.Controls.Add(this.buttonHeadSetOn);
             this.tabPageL2AR.Controls.Add(this.buttonOpenDrawer);
@@ -385,7 +389,7 @@ namespace L2ARAutomationSerialPort
             // 
             // buttonHeadSetOff
             // 
-            this.buttonHeadSetOff.Location = new System.Drawing.Point(234, 394);
+            this.buttonHeadSetOff.Location = new System.Drawing.Point(239, 457);
             this.buttonHeadSetOff.Name = "buttonHeadSetOff";
             this.buttonHeadSetOff.Size = new System.Drawing.Size(126, 62);
             this.buttonHeadSetOff.TabIndex = 33;
@@ -395,7 +399,7 @@ namespace L2ARAutomationSerialPort
             // 
             // buttonHeadSetOn
             // 
-            this.buttonHeadSetOn.Location = new System.Drawing.Point(100, 394);
+            this.buttonHeadSetOn.Location = new System.Drawing.Point(105, 457);
             this.buttonHeadSetOn.Name = "buttonHeadSetOn";
             this.buttonHeadSetOn.Size = new System.Drawing.Size(126, 62);
             this.buttonHeadSetOn.TabIndex = 32;
@@ -698,6 +702,26 @@ namespace L2ARAutomationSerialPort
             this.label3.TabIndex = 54;
             this.label3.Text = "                           RGB COMMANDS                           ";
             // 
+            // LckOpen
+            // 
+            this.LckOpen.Location = new System.Drawing.Point(105, 44);
+            this.LckOpen.Name = "LckOpen";
+            this.LckOpen.Size = new System.Drawing.Size(126, 62);
+            this.LckOpen.TabIndex = 34;
+            this.LckOpen.Text = "Locker Open";
+            this.LckOpen.UseVisualStyleBackColor = true;
+            this.LckOpen.Click += new System.EventHandler(this.LckOpen_Click);
+            // 
+            // LckClose
+            // 
+            this.LckClose.Location = new System.Drawing.Point(239, 44);
+            this.LckClose.Name = "LckClose";
+            this.LckClose.Size = new System.Drawing.Size(126, 62);
+            this.LckClose.TabIndex = 35;
+            this.LckClose.Text = "Locker Close";
+            this.LckClose.UseVisualStyleBackColor = true;
+            this.LckClose.Click += new System.EventHandler(this.LckClose_Click);
+            // 
             // FormSerialPortAutomation
             // 
             this.AcceptButton = this.buttonSend;
@@ -799,5 +823,7 @@ namespace L2ARAutomationSerialPort
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label labelUpdating;
         private System.Windows.Forms.Button buttonFetl;
+        private System.Windows.Forms.Button LckClose;
+        private System.Windows.Forms.Button LckOpen;
     }
 }

@@ -33,16 +33,31 @@ namespace L2ARAutomationSerialPort
         }
         private void buttonOpenDrawer_Click(object sender, EventArgs e)
         {
-            serialCmd.sendSerialComandAndRead("TWOON","L2AR");
+            serialCmd.sendSerialComandAndRead("TWOON", "L2AR");
             buttonOpenDrawer.BackColor = Color.Green;
             buttonCloseDrawer.BackColor = Color.Red;
         }
         private void buttonCloseDrawer_Click(object sender, EventArgs e)
         {
-            serialCmd.sendSerialComandAndRead("TWOOFF","L2AR");
+            serialCmd.sendSerialComandAndRead("TWOOFF", "L2AR");
             buttonCloseDrawer.BackColor = Color.Green;
             buttonOpenDrawer.BackColor = Color.Red;
         }
+
+        private void LckOpen_Click(object sender, EventArgs e)
+        {
+            serialCmd.sendSerialComandAndRead("OPEN", "L2AR");
+            LckOpen.BackColor = Color.Green;
+            LckClose.BackColor = Color.Red;
+        }
+
+        private void LckClose_Click(object sender, EventArgs e)
+        {
+            serialCmd.sendSerialComandAndRead("CLOSE", "L2AR");
+            LckClose.BackColor = Color.Green;
+            LckOpen.BackColor = Color.Red;
+        }
+
         private void buttonUpClip_Click(object sender, EventArgs e)
         {
             serialCmd.sendSerialComandAndRead("SIXON", "L2AR");
@@ -106,22 +121,22 @@ namespace L2ARAutomationSerialPort
 
         private void buttonOrigin_Click(object sender, EventArgs e)
         {
-            serialCmd.sendSerialComandAndRead("move000","DEPTH");
+            serialCmd.sendSerialComandAndRead("move000", "DEPTH");
         }
 
         private void buttonDistance25_Click(object sender, EventArgs e)
         {
-            serialCmd.sendSerialComandAndRead("move250","DEPTH");
+            serialCmd.sendSerialComandAndRead("move250", "DEPTH");
         }
 
         private void buttonDistance30_Click(object sender, EventArgs e)
         {
-            serialCmd.sendSerialComandAndRead("move300","DEPTH");
+            serialCmd.sendSerialComandAndRead("move300", "DEPTH");
         }
 
         private void buttonStatus_Click(object sender, EventArgs e)
         {
-            serialCmd.sendSerialComandAndRead("status","DEPTH");
+            serialCmd.sendSerialComandAndRead("status", "DEPTH");
         }
 
         private void buttonUP_Click(object sender, EventArgs e)
@@ -151,7 +166,7 @@ namespace L2ARAutomationSerialPort
         }
         private void buttonSend_Click(object sender, EventArgs e)
         {
-            serialCmd.sendSerialComandAndRead(textBoxSend.Text,"button");
+            serialCmd.sendSerialComandAndRead(textBoxSend.Text, "button");
             textBoxSend.Text = "";
 
         }
@@ -209,5 +224,6 @@ namespace L2ARAutomationSerialPort
         {
             serialCmd.sendSerialComandAndRead("FETL", "RGB");
         }
+
     }
 }

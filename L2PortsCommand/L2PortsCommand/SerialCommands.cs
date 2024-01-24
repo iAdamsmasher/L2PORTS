@@ -20,6 +20,12 @@ namespace L2PortsCommand
         public void sendSerialComandAndRead(string serialCmd, string stationType)
         {
             frmApp.textBoxResult.Text += ">" + Environment.NewLine;
+            var portnames = SerialPort.GetPortNames();
+
+            foreach (var port in portnames)
+            {
+                //MessageBox.Show("Porta Disponivel: " + port.ToString());
+            }
             try
             {
                 frmApp.textBoxResult.Text += serialCmd + Environment.NewLine;
@@ -45,7 +51,7 @@ namespace L2PortsCommand
                     frmApp.textBoxResult.Text += "Response:" + serialPort.ReadExisting();
                 else
                     frmApp.textBoxResult.Text += "Response:" + serialPort.ReadLine();
-                   
+
                 if (serialPort.IsOpen)
                     serialPort.Close();
 
