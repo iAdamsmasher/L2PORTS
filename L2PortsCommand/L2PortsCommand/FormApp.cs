@@ -119,6 +119,20 @@ namespace L2ARAutomationSerialPort
             buttonHeadSetOn.BackColor = Color.Red;
         }
 
+        private void btnUSBOn_Click(object sender, EventArgs e)
+        {
+            serialCmd.sendSerialComandAndRead("0", "L2AR");
+            btnUSBOn.BackColor = Color.Green;
+            btnUSBOff.BackColor = Color.Red;
+        }
+
+        private void btnUSBOff_Click(object sender, EventArgs e)
+        {
+            serialCmd.sendSerialComandAndRead("1", "L2AR");
+            btnUSBOff.BackColor = Color.Green;
+            btnUSBOn.BackColor = Color.Red;
+        }
+
         private void buttonOrigin_Click(object sender, EventArgs e)
         {
             serialCmd.sendSerialComandAndRead("move000", "DEPTH");
@@ -224,6 +238,7 @@ namespace L2ARAutomationSerialPort
         {
             serialCmd.sendSerialComandAndRead("FETL", "RGB");
         }
+
 
     }
 }
