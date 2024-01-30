@@ -15,3 +15,17 @@ C:\DevelopmentProjects\L2PORTS\L2PortsCommand\L2PortsCommand\obj\Debug\SerialPor
 C:\DevelopmentProjects\L2PORTS\L2PortsCommand\L2PortsCommand\obj\Debug\L2PortsCommand.exe
 C:\DevelopmentProjects\L2PORTS\L2PortsCommand\L2PortsCommand\obj\Debug\L2PortsCommand.pdb
 C:\DevelopmentProjects\L2PORTS\L2PortsCommand\L2PortsCommand\obj\Debug\SerialPortsCommands.csprojResolveAssemblyReference.cache
+E:\DesvelopmentProjects\L2ARPortsAutomation\L2PORTS\L2PortsCommand\L2PortsCommand\bin\Debug\L2PortsCommand.exe.config
+E:\DesvelopmentProjects\L2ARPortsAutomation\L2PORTS\L2PortsCommand\L2PortsCommand\bin\Debug\L2PortsCommand.exe
+E:\DesvelopmentProjects\L2ARPortsAutomation\L2PORTS\L2PortsCommand\L2PortsCommand\bin\Debug\L2PortsCommand.pdb
+E:\DesvelopmentProjects\L2ARPortsAutomation\L2PORTS\L2PortsCommand\L2PortsCommand\obj\Debug\L2ARAutomationSerialPort.FormSerialPortAutomation.resources
+E:\DesvelopmentProjects\L2ARPortsAutomation\L2PORTS\L2PortsCommand\L2PortsCommand\obj\Debug\L2PortsCommand.Properties.Resources.resources
+E:\DesvelopmentProjects\L2ARPortsAutomation\L2PORTS\L2PortsCommand\L2PortsCommand\obj\Debug\SerialPortsCommands.csproj.GenerateResource.cache
+E:\DesvelopmentProjects\L2ARPortsAutomation\L2PORTS\L2PortsCommand\L2PortsCommand\obj\Debug\SerialPortsCommands.csproj.CoreCompileInputs.cache
+E:\DesvelopmentProjects\L2ARPortsAutomation\L2PORTS\L2PortsCommand\L2PortsCommand\obj\Debug\L2PortsCommand.exe
+E:\DesvelopmentProjects\L2ARPortsAutomation\L2PORTS\L2PortsCommand\L2PortsCommand\obj\Debug\L2PortsCommand.pdb
+E:\DesvelopmentProjects\L2ARPortsAutomation\L2PORTS\L2PortsCommand\L2PortsCommand\obj\Debug\L2PortsCommand.exe.config
+E:\DesvelopmentProjects\L2ARPortsAutomation\L2PORTS\L2PortsCommand\L2PortsCommand\bin\Debug\NationalInstruments.Common.dll
+E:\DesvelopmentProjects\L2ARPortsAutomation\L2PORTS\L2PortsCommand\L2PortsCommand\bin\Debug\NationalInstruments.Common.Native.dll
+E:\DesvelopmentProjects\L2ARPortsAutomation\L2PORTS\L2PortsCommand\L2PortsCommand\bin\Debug\NationalInstruments.VisaNS.dll
+E:\DesvelopmentProjects\L2ARPortsAutomation\L2PORTS\L2PortsCommand\L2PortsCommand\obj\Debug\SerialPortsCommands.csproj.CopyComplete

@@ -10,14 +10,16 @@ namespace L2ARAutomationSerialPort
     {
         private static FormSerialPortAutomation INSTANCE = null;
         SerialCommands serialCmd;
-        private object serialPort;
+       // private object serialPort;
         SerialPort serialPorts = new SerialPort();
+        PowerSupply powerSupply;
 
         public FormSerialPortAutomation()
         {
             InitializeComponent();
             INSTANCE = this;
-            instanceSerialCommands();
+            //instanceSerialCommands();
+            instanceClasses();
         }
 
         public static FormSerialPortAutomation getInstance()
@@ -27,9 +29,10 @@ namespace L2ARAutomationSerialPort
 
             return INSTANCE;
         }
-        private void instanceSerialCommands()
+        private void instanceClasses() //instanceSerialCommands()
         {
             serialCmd = new SerialCommands();
+            powerSupply = new PowerSupply();
         }
         private void buttonOpenDrawer_Click(object sender, EventArgs e)
         {
@@ -133,6 +136,11 @@ namespace L2ARAutomationSerialPort
             btnUSBOn.BackColor = Color.Red;
         }
 
+        private void btnSenEnd_Click(object sender, EventArgs e)
+        {
+            serialCmd.sendSerialComandAndRead("KEY", "L2AR");
+        }
+
         private void buttonOrigin_Click(object sender, EventArgs e)
         {
             serialCmd.sendSerialComandAndRead("move000", "DEPTH");
@@ -234,11 +242,15 @@ namespace L2ARAutomationSerialPort
             serialCmd.sendSerialComandAndRead("SETI:00", "RGB");
         }
 
-        private void buttonFetl_Click(object sender, EventArgs e)
+        private void ButtonFetl_Click(object sender, EventArgs e)
         {
             serialCmd.sendSerialComandAndRead("FETL", "RGB");
+
         }
 
-
+        private void btnPowerSupply_Click(object sender, EventArgs e)
+        {
+            powerSupply.PowerSupplyCommands();
+        }
     }
 }

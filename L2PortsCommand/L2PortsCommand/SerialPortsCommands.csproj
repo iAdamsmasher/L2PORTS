@@ -37,6 +37,16 @@
     <ApplicationIcon>Monitor.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="NationalInstruments.Common, Version=19.0.40.49152, Culture=neutral, PublicKeyToken=dc6ad606294fc298, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\NationalInstruments.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="NationalInstruments.Common.Native">
+      <HintPath>..\NationalInstruments.Common.Native.dll</HintPath>
+    </Reference>
+    <Reference Include="NationalInstruments.VisaNS">
+      <HintPath>..\NationalInstruments.VisaNS.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -56,6 +66,7 @@
     <Compile Include="FormApp.Designer.cs">
       <DependentUpon>FormApp.cs</DependentUpon>
     </Compile>
+    <Compile Include="PowerSupply.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SerialCommands.cs" />
