@@ -23,6 +23,8 @@ namespace L2PortsCommand
             try
             {
                 frmApp.textBoxResult.Text += serialCmd + Environment.NewLine;
+                frmApp.textBoxResult.Select(frmApp.textBoxResult.Text.Length - 1, 0);
+                frmApp.textBoxResult.ScrollToCaret();
                 Application.DoEvents();
 
                 serialPort = new SerialPort(frmApp.comboBoxPorts.Text);
@@ -42,9 +44,17 @@ namespace L2PortsCommand
                 serialPort.Open();
                 serialPort.WriteLine(string.Format("{0}\r\n", serialCmd));
                 if (stationType == "L2AR")
+                {
                     frmApp.textBoxResult.Text += "Response:" + serialPort.ReadExisting();
+                    frmApp.textBoxResult.Select(frmApp.textBoxResult.Text.Length - 1, 0);
+                    frmApp.textBoxResult.ScrollToCaret();
+                }
                 else
+                {
                     frmApp.textBoxResult.Text += "Response:" + serialPort.ReadLine();
+                    frmApp.textBoxResult.Select(frmApp.textBoxResult.Text.Length - 1, 0);
+                    frmApp.textBoxResult.ScrollToCaret();
+                }
 
                 if (serialPort.IsOpen)
                     serialPort.Close();

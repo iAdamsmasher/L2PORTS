@@ -24,8 +24,8 @@ E:\DesvelopmentProjects\L2ARPortsAutomation\L2PORTS\L2PortsCommand\L2PortsComman
 E:\DesvelopmentProjects\L2ARPortsAutomation\L2PORTS\L2PortsCommand\L2PortsCommand\obj\Debug\SerialPortsCommands.csproj.CoreCompileInputs.cache
 E:\DesvelopmentProjects\L2ARPortsAutomation\L2PORTS\L2PortsCommand\L2PortsCommand\obj\Debug\L2PortsCommand.exe
 E:\DesvelopmentProjects\L2ARPortsAutomation\L2PORTS\L2PortsCommand\L2PortsCommand\obj\Debug\L2PortsCommand.pdb
-E:\DesvelopmentProjects\L2ARPortsAutomation\L2PORTS\L2PortsCommand\L2PortsCommand\obj\Debug\L2PortsCommand.exe.config
-E:\DesvelopmentProjects\L2ARPortsAutomation\L2PORTS\L2PortsCommand\L2PortsCommand\bin\Debug\NationalInstruments.Common.dll
-E:\DesvelopmentProjects\L2ARPortsAutomation\L2PORTS\L2PortsCommand\L2PortsCommand\bin\Debug\NationalInstruments.Common.Native.dll
 E:\DesvelopmentProjects\L2ARPortsAutomation\L2PORTS\L2PortsCommand\L2PortsCommand\bin\Debug\NationalInstruments.VisaNS.dll
 E:\DesvelopmentProjects\L2ARPortsAutomation\L2PORTS\L2PortsCommand\L2PortsCommand\obj\Debug\SerialPortsCommands.csproj.CopyComplete
+E:\DesvelopmentProjects\L2ARPortsAutomation\L2PORTS\L2PortsCommand\L2PortsCommand\bin\Debug\NationalInstruments.Common.dll
+E:\DesvelopmentProjects\L2ARPortsAutomation\L2PORTS\L2PortsCommand\L2PortsCommand\obj\Debug\SerialPortsCommands.csprojAssemblyReference.cache
+E:\DesvelopmentProjects\L2ARPortsAutomation\L2PORTS\L2PortsCommand\L2PortsCommand\obj\Debug\SerialPortsCommands.csproj.ResolveComReference.cache

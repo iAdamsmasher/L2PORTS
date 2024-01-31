@@ -369,12 +369,12 @@ namespace L2ARAutomationSerialPort
             this.labelName.AutoSize = true;
             this.labelName.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelName.ForeColor = System.Drawing.Color.SkyBlue;
-            this.labelName.Location = new System.Drawing.Point(6, 387);
+            this.labelName.Location = new System.Drawing.Point(6, 408);
             this.labelName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelName.Name = "labelName";
-            this.labelName.Size = new System.Drawing.Size(147, 13);
+            this.labelName.Size = new System.Drawing.Size(207, 13);
             this.labelName.TabIndex = 30;
-            this.labelName.Text = "Developed by Matheus.Paiva";
+            this.labelName.Text = "Developed by Matheus.Paiva and R. Kelin";
             // 
             // labelL2ARCommands
             // 
@@ -401,7 +401,7 @@ namespace L2ARAutomationSerialPort
             this.tabControlMain.Margin = new System.Windows.Forms.Padding(2);
             this.tabControlMain.Name = "tabControlMain";
             this.tabControlMain.SelectedIndex = 0;
-            this.tabControlMain.Size = new System.Drawing.Size(389, 395);
+            this.tabControlMain.Size = new System.Drawing.Size(389, 413);
             this.tabControlMain.TabIndex = 32;
             // 
             // tabPageL2AR
@@ -416,7 +416,7 @@ namespace L2ARAutomationSerialPort
             this.tabPageL2AR.Margin = new System.Windows.Forms.Padding(2);
             this.tabPageL2AR.Name = "tabPageL2AR";
             this.tabPageL2AR.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPageL2AR.Size = new System.Drawing.Size(381, 362);
+            this.tabPageL2AR.Size = new System.Drawing.Size(381, 380);
             this.tabPageL2AR.TabIndex = 0;
             this.tabPageL2AR.Text = "L2AR";
             // 
@@ -429,7 +429,7 @@ namespace L2ARAutomationSerialPort
             this.grBxPower.Controls.Add(this.comboBoxVolt);
             this.grBxPower.Controls.Add(this.btnPowerSupply);
             this.grBxPower.Controls.Add(this.comboBoxCurr);
-            this.grBxPower.Location = new System.Drawing.Point(196, 194);
+            this.grBxPower.Location = new System.Drawing.Point(196, 213);
             this.grBxPower.Name = "grBxPower";
             this.grBxPower.Size = new System.Drawing.Size(169, 159);
             this.grBxPower.TabIndex = 40;
@@ -438,25 +438,25 @@ namespace L2ARAutomationSerialPort
             // 
             // textBoxAddress
             // 
-            this.textBoxAddress.Location = new System.Drawing.Point(11, 37);
+            this.textBoxAddress.Location = new System.Drawing.Point(16, 40);
             this.textBoxAddress.Name = "textBoxAddress";
-            this.textBoxAddress.Size = new System.Drawing.Size(144, 20);
+            this.textBoxAddress.Size = new System.Drawing.Size(139, 20);
             this.textBoxAddress.TabIndex = 6;
             this.textBoxAddress.Text = "GPIB0::9::INSTR";
             // 
             // labelAddress
             // 
             this.labelAddress.AutoSize = true;
-            this.labelAddress.Location = new System.Drawing.Point(13, 18);
+            this.labelAddress.Location = new System.Drawing.Point(13, 21);
             this.labelAddress.Name = "labelAddress";
-            this.labelAddress.Size = new System.Drawing.Size(116, 13);
+            this.labelAddress.Size = new System.Drawing.Size(48, 13);
             this.labelAddress.TabIndex = 5;
-            this.labelAddress.Text = "Address Power Supply:";
+            this.labelAddress.Text = "Address:";
             // 
             // labelC
             // 
             this.labelC.AutoSize = true;
-            this.labelC.Location = new System.Drawing.Point(83, 68);
+            this.labelC.Location = new System.Drawing.Point(90, 63);
             this.labelC.Name = "labelC";
             this.labelC.Size = new System.Drawing.Size(44, 13);
             this.labelC.TabIndex = 4;
@@ -465,7 +465,7 @@ namespace L2ARAutomationSerialPort
             // labelV
             // 
             this.labelV.AutoSize = true;
-            this.labelV.Location = new System.Drawing.Point(10, 68);
+            this.labelV.Location = new System.Drawing.Point(15, 63);
             this.labelV.Name = "labelV";
             this.labelV.Size = new System.Drawing.Size(46, 13);
             this.labelV.TabIndex = 3;
@@ -480,17 +480,17 @@ namespace L2ARAutomationSerialPort
             "5.4",
             "5.6",
             "5.8"});
-            this.comboBoxVolt.Location = new System.Drawing.Point(9, 87);
+            this.comboBoxVolt.Location = new System.Drawing.Point(16, 79);
             this.comboBoxVolt.Name = "comboBoxVolt";
-            this.comboBoxVolt.Size = new System.Drawing.Size(70, 21);
+            this.comboBoxVolt.Size = new System.Drawing.Size(60, 21);
             this.comboBoxVolt.TabIndex = 2;
             this.comboBoxVolt.Text = "5.0";
             // 
             // btnPowerSupply
             // 
-            this.btnPowerSupply.Location = new System.Drawing.Point(27, 119);
+            this.btnPowerSupply.Location = new System.Drawing.Point(16, 106);
             this.btnPowerSupply.Name = "btnPowerSupply";
-            this.btnPowerSupply.Size = new System.Drawing.Size(103, 28);
+            this.btnPowerSupply.Size = new System.Drawing.Size(139, 40);
             this.btnPowerSupply.TabIndex = 1;
             this.btnPowerSupply.Text = "Set Power Supply";
             this.btnPowerSupply.UseVisualStyleBackColor = true;
@@ -504,9 +504,9 @@ namespace L2ARAutomationSerialPort
             "1.2",
             "1.4",
             "1.6"});
-            this.comboBoxCurr.Location = new System.Drawing.Point(86, 87);
+            this.comboBoxCurr.Location = new System.Drawing.Point(95, 79);
             this.comboBoxCurr.Name = "comboBoxCurr";
-            this.comboBoxCurr.Size = new System.Drawing.Size(70, 21);
+            this.comboBoxCurr.Size = new System.Drawing.Size(60, 21);
             this.comboBoxCurr.TabIndex = 0;
             this.comboBoxCurr.Text = "1.0";
             // 
@@ -525,7 +525,7 @@ namespace L2ARAutomationSerialPort
             this.grBxAction.Controls.Add(this.buttonP3Out);
             this.grBxAction.Location = new System.Drawing.Point(5, 16);
             this.grBxAction.Name = "grBxAction";
-            this.grBxAction.Size = new System.Drawing.Size(182, 304);
+            this.grBxAction.Size = new System.Drawing.Size(182, 359);
             this.grBxAction.TabIndex = 39;
             this.grBxAction.TabStop = false;
             this.grBxAction.Text = "Action commands";
@@ -636,7 +636,7 @@ namespace L2ARAutomationSerialPort
             this.tabPageDepth.Margin = new System.Windows.Forms.Padding(2);
             this.tabPageDepth.Name = "tabPageDepth";
             this.tabPageDepth.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPageDepth.Size = new System.Drawing.Size(381, 362);
+            this.tabPageDepth.Size = new System.Drawing.Size(381, 380);
             this.tabPageDepth.TabIndex = 1;
             this.tabPageDepth.Text = "DEPTH";
             this.tabPageDepth.UseVisualStyleBackColor = true;
@@ -730,7 +730,7 @@ namespace L2ARAutomationSerialPort
             this.tabPageL2Vision.Margin = new System.Windows.Forms.Padding(2);
             this.tabPageL2Vision.Name = "tabPageL2Vision";
             this.tabPageL2Vision.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPageL2Vision.Size = new System.Drawing.Size(381, 362);
+            this.tabPageL2Vision.Size = new System.Drawing.Size(381, 380);
             this.tabPageL2Vision.TabIndex = 2;
             this.tabPageL2Vision.Text = "L2VISION";
             this.tabPageL2Vision.UseVisualStyleBackColor = true;
@@ -793,7 +793,7 @@ namespace L2ARAutomationSerialPort
             this.tabPageSqt.Margin = new System.Windows.Forms.Padding(2);
             this.tabPageSqt.Name = "tabPageSqt";
             this.tabPageSqt.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPageSqt.Size = new System.Drawing.Size(381, 362);
+            this.tabPageSqt.Size = new System.Drawing.Size(381, 380);
             this.tabPageSqt.TabIndex = 3;
             this.tabPageSqt.Text = "SQT";
             this.tabPageSqt.UseVisualStyleBackColor = true;
@@ -878,7 +878,7 @@ namespace L2ARAutomationSerialPort
             this.tabPageRGB.Margin = new System.Windows.Forms.Padding(2);
             this.tabPageRGB.Name = "tabPageRGB";
             this.tabPageRGB.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPageRGB.Size = new System.Drawing.Size(381, 362);
+            this.tabPageRGB.Size = new System.Drawing.Size(381, 380);
             this.tabPageRGB.TabIndex = 4;
             this.tabPageRGB.Text = "RGB";
             this.tabPageRGB.UseVisualStyleBackColor = true;
@@ -953,7 +953,7 @@ namespace L2ARAutomationSerialPort
             this.AcceptButton = this.buttonSend;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(674, 418);
+            this.ClientSize = new System.Drawing.Size(674, 427);
             this.Controls.Add(this.tabControlMain);
             this.Controls.Add(this.labelName);
             this.Controls.Add(this.buttonClear);

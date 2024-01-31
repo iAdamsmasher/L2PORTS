@@ -10,7 +10,6 @@ namespace L2ARAutomationSerialPort
     {
         private static FormSerialPortAutomation INSTANCE = null;
         SerialCommands serialCmd;
-       // private object serialPort;
         SerialPort serialPorts = new SerialPort();
         PowerSupply powerSupply;
 
@@ -18,7 +17,6 @@ namespace L2ARAutomationSerialPort
         {
             InitializeComponent();
             INSTANCE = this;
-            //instanceSerialCommands();
             instanceClasses();
         }
 
@@ -252,5 +250,6 @@ namespace L2ARAutomationSerialPort
         {
             powerSupply.PowerSupplyCommands();
         }
+
     }
 }

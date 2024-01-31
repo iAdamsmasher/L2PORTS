@@ -13,6 +13,8 @@ namespace L2PortsCommand
         public bool PowerSupplyCommands()
         {
             frmApp.textBoxResult.Text += ">" + Environment.NewLine;
+            frmApp.textBoxResult.Select(frmApp.textBoxResult.Text.Length - 1, 0);
+            frmApp.textBoxResult.ScrollToCaret();
             Application.DoEvents();
 
             try
@@ -25,14 +27,19 @@ namespace L2PortsCommand
                 Equipment.Write("OUTP On;*OPC?"); // write to instrument
                 res += Equipment.ReadString();
                 if (res == "1\n1\n1\n")
+                {
                     frmApp.textBoxResult.Text += "Power supply Updated" + Environment.NewLine;
-
+                    frmApp.textBoxResult.Select(frmApp.textBoxResult.Text.Length - 1, 0);
+                    frmApp.textBoxResult.ScrollToCaret();
+                }
                 return true;
             }
             catch
             {
                 MessageBox.Show("Power supply not found!");
                 frmApp.textBoxResult.Text += "Power supply not found!" + Environment.NewLine;
+                frmApp.textBoxResult.Select(frmApp.textBoxResult.Text.Length - 1, 0);
+                frmApp.textBoxResult.ScrollToCaret();
                 return false;
             }
         }
