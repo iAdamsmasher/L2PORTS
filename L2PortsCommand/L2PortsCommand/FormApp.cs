@@ -250,5 +250,6 @@ namespace L2ARAutomationSerialPort
         {
             powerSupply.PowerSupplyCommands();
         }
+
     }
 }
