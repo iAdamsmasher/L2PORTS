@@ -251,5 +251,11 @@ namespace L2ARAutomationSerialPort
             powerSupply.PowerSupplyCommands();
         }
 
+        private void btnL_SourceVal_Click(object sender, EventArgs e)
+        {
+            serialCmd.sendSerialComandAndRead("Set_LightSource_01_1500_"+ tckBarL_SourceVal.Value, "L2V L_Source");
+            int pgsBarReadL_Source = tckBarL_SourceVal.Value;
+
+        }
     }
 }

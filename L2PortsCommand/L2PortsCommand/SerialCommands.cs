@@ -62,7 +62,8 @@ namespace L2PortsCommand
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error : " + ex);
+                MessageBox.Show("No communication with port");
+                //MessageBox.Show("Error : " + ex);
             }
         }
     }

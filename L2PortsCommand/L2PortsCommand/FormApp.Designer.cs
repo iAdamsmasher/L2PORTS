@@ -101,6 +101,10 @@ namespace L2ARAutomationSerialPort
             this.buttonDownRGB = new System.Windows.Forms.Button();
             this.buttonUpRGB = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
+            this.tabPageLightsource = new System.Windows.Forms.TabPage();
+            this.tckBarL_SourceVal = new System.Windows.Forms.TrackBar();
+            this.pgsBarReadL_Source = new System.Windows.Forms.ProgressBar();
+            this.btnL_SourceVal = new System.Windows.Forms.Button();
             this.tabControlMain.SuspendLayout();
             this.tabPageL2AR.SuspendLayout();
             this.grBxPower.SuspendLayout();
@@ -110,6 +114,8 @@ namespace L2ARAutomationSerialPort
             this.tabPageL2Vision.SuspendLayout();
             this.tabPageSqt.SuspendLayout();
             this.tabPageRGB.SuspendLayout();
+            this.tabPageLightsource.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tckBarL_SourceVal)).BeginInit();
             this.SuspendLayout();
             // 
             // labelPort
@@ -395,6 +401,7 @@ namespace L2ARAutomationSerialPort
             this.tabControlMain.Controls.Add(this.tabPageL2Vision);
             this.tabControlMain.Controls.Add(this.tabPageSqt);
             this.tabControlMain.Controls.Add(this.tabPageRGB);
+            this.tabControlMain.Controls.Add(this.tabPageLightsource);
             this.tabControlMain.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.tabControlMain.ItemSize = new System.Drawing.Size(54, 25);
             this.tabControlMain.Location = new System.Drawing.Point(265, 8);
@@ -948,6 +955,47 @@ namespace L2ARAutomationSerialPort
             this.label3.TabIndex = 54;
             this.label3.Text = "                           RGB COMMANDS                           ";
             // 
+            // tabPageLightsource
+            // 
+            this.tabPageLightsource.Controls.Add(this.tckBarL_SourceVal);
+            this.tabPageLightsource.Controls.Add(this.pgsBarReadL_Source);
+            this.tabPageLightsource.Controls.Add(this.btnL_SourceVal);
+            this.tabPageLightsource.Location = new System.Drawing.Point(4, 29);
+            this.tabPageLightsource.Name = "tabPageLightsource";
+            this.tabPageLightsource.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageLightsource.Size = new System.Drawing.Size(381, 380);
+            this.tabPageLightsource.TabIndex = 5;
+            this.tabPageLightsource.Text = "L2V L_Source";
+            this.tabPageLightsource.UseVisualStyleBackColor = true;
+            // 
+            // tckBarL_SourceVal
+            // 
+            this.tckBarL_SourceVal.Location = new System.Drawing.Point(32, 99);
+            this.tckBarL_SourceVal.Maximum = 9999;
+            this.tckBarL_SourceVal.Name = "tckBarL_SourceVal";
+            this.tckBarL_SourceVal.Size = new System.Drawing.Size(310, 45);
+            this.tckBarL_SourceVal.SmallChange = 50;
+            this.tckBarL_SourceVal.TabIndex = 51;
+            // 
+            // pgsBarReadL_Source
+            // 
+            this.pgsBarReadL_Source.Location = new System.Drawing.Point(32, 66);
+            this.pgsBarReadL_Source.Maximum = 9999;
+            this.pgsBarReadL_Source.Name = "pgsBarReadL_Source";
+            this.pgsBarReadL_Source.Size = new System.Drawing.Size(310, 27);
+            this.pgsBarReadL_Source.TabIndex = 50;
+            // 
+            // btnL_SourceVal
+            // 
+            this.btnL_SourceVal.Location = new System.Drawing.Point(32, 153);
+            this.btnL_SourceVal.Margin = new System.Windows.Forms.Padding(2);
+            this.btnL_SourceVal.Name = "btnL_SourceVal";
+            this.btnL_SourceVal.Size = new System.Drawing.Size(82, 40);
+            this.btnL_SourceVal.TabIndex = 49;
+            this.btnL_SourceVal.Text = "Set L_Source";
+            this.btnL_SourceVal.UseVisualStyleBackColor = true;
+            this.btnL_SourceVal.Click += new System.EventHandler(this.btnL_SourceVal_Click);
+            // 
             // FormSerialPortAutomation
             // 
             this.AcceptButton = this.buttonSend;
@@ -991,6 +1039,9 @@ namespace L2ARAutomationSerialPort
             this.tabPageSqt.PerformLayout();
             this.tabPageRGB.ResumeLayout(false);
             this.tabPageRGB.PerformLayout();
+            this.tabPageLightsource.ResumeLayout(false);
+            this.tabPageLightsource.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tckBarL_SourceVal)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1069,5 +1120,9 @@ namespace L2ARAutomationSerialPort
         public System.Windows.Forms.ComboBox comboBoxCurr;
         public System.Windows.Forms.ComboBox comboBoxVolt;
         public System.Windows.Forms.TextBox textBoxAddress;
+        private System.Windows.Forms.TabPage tabPageLightsource;
+        private System.Windows.Forms.TrackBar tckBarL_SourceVal;
+        private System.Windows.Forms.ProgressBar pgsBarReadL_Source;
+        private System.Windows.Forms.Button btnL_SourceVal;
     }
 }

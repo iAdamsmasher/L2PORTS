@@ -1,0 +1,7 @@
+E:\DesvelopmentProjects\Program\Program\bin\Debug\Program.exe.config
+E:\DesvelopmentProjects\Program\Program\bin\Debug\Program.exe
+E:\DesvelopmentProjects\Program\Program\bin\Debug\Program.pdb
+E:\DesvelopmentProjects\Program\Program\obj\Debug\Program.csprojAssemblyReference.cache
+E:\DesvelopmentProjects\Program\Program\obj\Debug\Program.csproj.CoreCompileInputs.cache
+E:\DesvelopmentProjects\Program\Program\obj\Debug\Program.exe
+E:\DesvelopmentProjects\Program\Program\obj\Debug\Program.pdb
